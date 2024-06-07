@@ -38,14 +38,19 @@ body
 	width: 100%;
 }
 
-.form-container .btn:hover, .open-button:hover
+.form-container .btn:hover
 {
-	opacity: 1;
+	background-color: #333333;
 }
 
 .form-container .cancel
 {
 	background-color: red;
+}
+
+.form-container .cancel:hover
+{
+	background-color: maroon;
 }
 
 .form-popup
