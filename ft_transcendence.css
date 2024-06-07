@@ -1,0 +1,103 @@
+body
+{
+	font-family: system-ui;
+	margin: 0;
+}
+
+.form-container
+{
+	background-color: #f1f1f1;
+	max-width: 20rem;
+	padding: 1rem;
+}
+
+.form-container input[type=text], .form-container input[type=password]
+{
+	background: #dddddd;
+	border: none;
+	color: black;
+	padding: 1rem;
+	margin: 1rem 0;
+	width :calc(100% - 2rem);
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus
+{
+	background-color: #ddd;
+	outline: none;
+}
+
+.form-container .btn
+{
+	background-color: black;
+	border: none;
+	color: white;
+	cursor: pointer;
+	margin-bottom:1rem;
+	padding: 1rem;
+	width: 100%;
+}
+
+.form-container .btn:hover, .open-button:hover
+{
+	opacity: 1;
+}
+
+.form-container .cancel
+{
+	background-color: red;
+}
+
+.form-popup
+{
+	display: none;
+	left: calc(100vw/2 - 10rem);
+	position: fixed;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.logo
+{
+	text-align: center;
+}
+
+.navbar
+{
+	background-color: black;
+	color: white;
+	overflow: hidden;
+	padding-top: 1rem;
+}
+
+.navbar-content
+{
+	margin: auto;
+	width: 90rem;
+}
+
+.navbar-content a
+{
+	float: left;
+	font-size: 1rem;
+	text-align: center;
+	padding: 1rem;
+}
+
+.navbar-content a:hover
+{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
+
+.title
+{
+	font-size: 2rem;
+}
+
+.subtitle
+{
+	font-size: 1rem;
+	text-align: center;
+}
