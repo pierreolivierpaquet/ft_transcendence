@@ -6,14 +6,15 @@ body
 
 .form-container
 {
-	background-color: #f1f1f1;
+	background-color: black;
+	color: white;
 	max-width: 20rem;
 	padding: 1rem;
 }
 
 .form-container input[type=text], .form-container input[type=password]
 {
-	background: #dddddd;
+	background: white;
 	border: none;
 	color: black;
 	padding: 1rem;
@@ -29,9 +30,9 @@ body
 
 .form-container .btn
 {
-	background-color: black;
+	background-color: white;
 	border: none;
-	color: white;
+	color: black;
 	cursor: pointer;
 	margin-bottom:1rem;
 	padding: 1rem;
@@ -40,12 +41,13 @@ body
 
 .form-container .btn:hover
 {
-	background-color: #333333;
+	background-color: #ddd;
 }
 
 .form-container .cancel
 {
 	background-color: red;
+	color: white;
 }
 
 .form-container .cancel:hover
