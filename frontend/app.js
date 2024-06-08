@@ -1,5 +1,23 @@
 const canvas = document.getElementById("pong"); // Gets a reference to your HTML canvas element
 const context = canvas.getContext("2d"); // Obtains the 2D rendering context, which is what we use to draw on the canvas.
+document.addEventListener("keydown", keyDownHandler, false);
+document.addEventListener("keyup", keyUpHandler, false);
+
+function keyDownHandler(e) {
+  if (e.code === "ArrowUp" || e.code === "KeyW") {
+    userPaddle.dy = -5;
+  } else if (e.code === "ArrowDown" || e.code === "KeyS") {
+    userPaddle.dy = 5;
+  }
+}
+
+function keyUpHandler(e) {
+  if (e.code === "ArrowUp" || e.code === "KeyW") {
+    userPaddle.dy = 0;
+  } else if (e.code === "ArrowDown" || e.code === "KeyS") {
+    userPaddle.dy = 0;
+  }
+}
 
 const ball = {
   x: canvas.width / 2,
@@ -60,14 +78,22 @@ function moveBall() {
   ball.x += ball.velocityX;
   ball.y += ball.velocityY;
 
+  // Ball bounces off left and right
   if (ball.x + ball.radius > canvas.width || ball.x - ball.radius < 0) {
     ball.velocityX = -ball.velocityX;
   }
 
+  // Ball bounces off top and bottom
   if (ball.y + ball.radius > canvas.height || ball.y - ball.radius < 0) {
     ball.velocityY = -ball.velocityY;
   }
 }
 
-
-
+function update() {
+  if (userPaddle.dy < 0 && userPaddle.y > 0) {
+    userPaddle.y += userPaddle.dy;
+  } else if (userPaddle.dy > 0 && userPaddle.y < canvas.height - userPaddle.height) {
+    userPaddle.y += userPaddle.dy;
+  }
+  computerPaddle.y = ball.y - computerPaddle.height / 2;
+}
