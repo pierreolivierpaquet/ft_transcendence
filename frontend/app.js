@@ -30,7 +30,24 @@ function render() {
 
 function game() {
   render();
+  moveBall();
   update();
 }
 
 setInterval(game, 1000 / 60);
+
+function moveBall() {
+  ball.x += ball.velocityX;
+  ball.y += ball.velocityY;
+
+  if (ball.x + ball.radius > canvas.width || ball.x - ball.radius < 0) {
+    ball.velocityX = -ball.velocityX;
+  }
+
+  if (ball.y + ball.radius > canvas.height || ball.y - ball.radius < 0) {
+    ball.velocityY = -ball.velocityY;
+  }
+}
+
+
+
