@@ -24,8 +24,8 @@ const ball = {
   y: canvas.height / 2,
   radius: 10,
   speed: 5,
-  velocityX: 2,
-  velocityY: 2,
+  velocityX: 3.5,
+  velocityY: 3.5,
   color: "WHITE",
 };
 
@@ -34,7 +34,7 @@ const userPaddle = {
   y: canvas.height / 2 - 50,
   width: 10,
   height: 100,
-  color: "WHITE",
+  color: "RED",
   dy: 0,
 };
 
@@ -43,7 +43,7 @@ const computerPaddle = {
   y: canvas.height / 2 - 50,
   width: 10,
   height: 100,
-  color: "WHITE",
+  color: "RED",
   dy: 0,
 };
 
@@ -79,13 +79,33 @@ function moveBall() {
   ball.y += ball.velocityY;
 
   // Ball bounces off left and right
-  if (ball.x + ball.radius > canvas.width || ball.x - ball.radius < 0) {
-    ball.velocityX = -ball.velocityX;
-  }
+  // if (ball.x + ball.radius > canvas.width || ball.x - ball.radius < 0) {
+  //   ball.velocityX = -ball.velocityX;
+  // }
 
   // Ball bounces off top and bottom
   if (ball.y + ball.radius > canvas.height || ball.y - ball.radius < 0) {
     ball.velocityY = -ball.velocityY;
+  }
+
+  // Ball bounces off paddle
+  let paddle = ball.x < canvas.width / 2 ? userPaddle : computerPaddle;
+
+  if (
+    ball.x < paddle.x + paddle.width + ball.radius &&
+    ball.x > paddle.x - ball.radius &&
+    ball.y < paddle.y + paddle.height + ball.radius &&
+    ball.y > paddle.y - ball.radius
+  ) {
+    ball.velocityX = -ball.velocityX; // Reverse horizontal direction
+  }
+
+  // Check for out-of-bounds (left or right)
+  if (ball.x < 0 || ball.x > canvas.width) {
+
+    // Reset the ball to the center
+    ball.x = canvas.width / 2;
+    ball.y = canvas.height / 2;
   }
 }
 
