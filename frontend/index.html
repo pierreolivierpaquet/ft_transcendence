@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=800, initial-scale=1.0" />
-    <title>Ping Pong Game</title>
-    <style>
-      canvas {
-        background: #000;
-        display: block;
-        margin: 0 auto;
-      }
-    </style>
-  </head>
-  <body>
-    <canvas id="pong" width="800" height="400"></canvas>
-    <script src="app.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Application</title>
+    <link rel="stylesheet" href="../frontend/css/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="menu-icon" id="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home" onclick="navigate('home')">Home</a></li>
+            <li><a href="#about" onclick="navigate('about')">About</a></li>
+            <li><a href="#game" onclick="navigate('game')">Game</a></li>
+            <li><a href="#login" onclick="navigate('login')">Login</a></li>
+            <li><a href="#signup" onclick="navigate('signup')">Sign up</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <!-- The core idea of SPA is to load content here dynamically -->
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
