@@ -1,7 +1,17 @@
+
+/*
+body:
+Sets the default font for the entire page.
+*/
 body {
     font-family: Arial, sans-serif;
 }
 
+/*
+nav:
+Creates a flexbox container to arrange the menu icon and navigation links horizontally.
+Adds padding and a background color.
+*/
 nav {
     display: flex;
     justify-content: space-between;
@@ -10,53 +20,49 @@ nav {
     background-color: #333;
 }
 
+/*
+.menu-icon:
+This is the hamburger icon container. It's initially hidden (display: none) on larger screens.
+It uses flexbox to stack the three bars vertically (flex-direction: column).
+cursor: pointer changes the cursor to a pointer when hovering over the icon.
+*/
 .menu-icon {
-    display: none;
+    display: flex;
     flex-direction: column;
     cursor: pointer;
 }
 
+/*
+.bar:
+Styles each individual bar in the hamburger icon.
+*/
 .bar {
-    width: 25px;
-    height: 3px;
+    width: 30px;
+    height: 2px;
     background-color: white;
     margin: 4px 0;
 }
 
+/*
+.nav-links:
+Creates a flexbox container to arrange the navigation links horizontally.
+Adds padding and a background color.
+list-style: none removes bullet points from the list.
+*/
 .nav-links {
-    display: flex;
+    display: none;
     list-style: none;
 }
 
+.nav-links.active {
+    display: flex;
+}
+
 .nav-links li {
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: white;
-}
-
-@media screen and (max-width: 768px) {
-    .menu-icon {
-        display: flex;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #333;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 20px 0;
-    }
 }
