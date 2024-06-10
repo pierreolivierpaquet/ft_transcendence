@@ -2,9 +2,10 @@
 {
 	background-color: black;
 	color: white;
-	width: 50rem;
+	filter: drop-shadow(black 0.5rem 0.5rem 1rem);
 	padding: 1rem;
 	text-align: center;
+	width: 50rem;
 }
 
 .about-popup
@@ -30,15 +31,16 @@
 	width: 90rem;
 }
 
-.form-container
+.login-container
 {
 	background-color: black;
 	color: white;
+	filter: drop-shadow(black 0.5rem 0.5rem 1rem);
 	max-width: 20rem;
 	padding: 1rem;
 }
 
-.form-container input[type=text], .form-container input[type=password]
+.login-container input[type=text], .login-container input[type=password]
 {
 	background: white;
 	border: none;
@@ -48,13 +50,13 @@
 	width: calc(100% - 2rem);
 }
 
-.form-container input[type=text]:focus, .form-container input[type=password]:focus
+.login-container input[type=text]:focus, .login-container input[type=password]:focus
 {
 	background-color: #ddd;
 	outline: none;
 }
 
-.form-container .btn
+.login-container .btn
 {
 	background-color: white;
 	border: none;
@@ -65,23 +67,23 @@
 	width: 100%;
 }
 
-.form-container .btn:hover
+.login-container .btn:hover
 {
 	background-color: #ddd;
 }
 
-.form-container .cancel
+.login-container .cancel
 {
 	background-color: red;
 	color: white;
 }
 
-.form-container .cancel:hover
+.login-container .cancel:hover
 {
 	background-color: maroon;
 }
 
-.form-popup
+.login-popup
 {
 	display: none;
 	left: calc(100vw/2 - 10rem);
@@ -125,15 +127,15 @@
 	width: 90rem;
 }
 
-.title
-{
-	font-size: 2rem;
-}
-
 .subtitle
 {
 	font-size: 1rem;
 	text-align: center;
+}
+
+.title
+{
+	font-size: 2rem;
 }
 
 body
