@@ -1,3 +1,8 @@
+.about-blurb
+{
+	margin: 1rem;
+}
+
 .about-container
 {
 	background-color: black;
@@ -15,6 +20,34 @@
 	position: fixed;
 	top: 50%;
 	transform: translate(0, -50%);
+}
+
+.btn
+{
+	background-color: white;
+	border: none;
+	color: black;
+	cursor: pointer;
+	margin-bottom:1rem;
+	padding: 1rem;
+	width: 100%;
+}
+
+.btn:hover
+{
+	background-color: #ddd;
+}
+
+.cancel
+{
+	background-color: red;
+	margin-bottom: unset;
+	color: white;
+}
+
+.cancel:hover
+{
+	background-color: maroon;
 }
 
 .content
@@ -56,33 +89,6 @@
 	outline: none;
 }
 
-.login-container .btn
-{
-	background-color: white;
-	border: none;
-	color: black;
-	cursor: pointer;
-	margin-bottom:1rem;
-	padding: 1rem;
-	width: 100%;
-}
-
-.login-container .btn:hover
-{
-	background-color: #ddd;
-}
-
-.login-container .cancel
-{
-	background-color: red;
-	color: white;
-}
-
-.login-container .cancel:hover
-{
-	background-color: maroon;
-}
-
 .login-popup
 {
 	display: none;
@@ -94,7 +100,11 @@
 
 .logo
 {
+	display: flex;
+	flex-flow: column;
+	margin: auto;
 	text-align: center;
+	width: fit-content;
 }
 
 .navbar
@@ -129,12 +139,14 @@
 
 .subtitle
 {
+	cursor: pointer;
 	font-size: 1rem;
 	text-align: center;
 }
 
 .title
 {
+	cursor: pointer;
 	font-size: 2rem;
 }
 
