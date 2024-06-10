@@ -33,20 +33,12 @@ function closeLogin()
 
 function openAbout()
 {
-	about_form_enabled = !about_form_enabled;
-	if (about_form_enabled == true)
-	{
-		closeLogin();
-		closeHome();
-		document.getElementById("about-button").style.color = "black";
-		document.getElementById("about-button").style.backgroundColor = "white";
-		document.getElementById("about").style.display = "block";
-	}
-	else
-	{
-		closeAbout();
-		openHome();
-	}
+	about_form_enabled = true;
+	closeLogin();
+	closeHome();
+	document.getElementById("about-button").style.color = "black";
+	document.getElementById("about-button").style.backgroundColor = "white";
+	document.getElementById("about").style.display = "block";
 }
 
 function openHome()
@@ -61,18 +53,10 @@ function openHome()
 
 function openLogin()
 {
-	login_form_enabled = !login_form_enabled;
-	if (login_form_enabled == true)
-	{
-		closeAbout();
-		closeHome();
-		document.getElementById("login-button").style.color = "black";
-		document.getElementById("login-button").style.backgroundColor = "white";
-		document.getElementById("login").style.display = "block";
-	}
-	else
-	{
-		closeLogin();
-		openHome();
-	}
+	login_form_enabled = true;
+	closeAbout();
+	closeHome();
+	document.getElementById("login-button").style.color = "black";
+	document.getElementById("login-button").style.backgroundColor = "white";
+	document.getElementById("login").style.display = "block";
 }
