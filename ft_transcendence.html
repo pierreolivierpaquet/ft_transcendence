@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-US" prefix="og: https://ogp.me/ns#">
+<html lang="en-US">
 	<title>
 		The Great Avocado War of '24
 	</title>
@@ -27,16 +27,16 @@
 				<a>
 					Leaderboard
 				</a>
-				<a class="Login" onclick="openForm()">
+				<a id="login-button" onclick="openLogin()">
 					Log in
 				</button>
-				<a>
+				<a id="about-button" onclick="openAbout()">
 					About
 				</a>
 			</div>
 		</div>
-		<div class="form-popup" id="myForm">
-			<form action="/action_page.php" class="form-container">
+		<div class="form-popup" id="login">
+			<form class="form-container">
 				<h1>
 					Login
 				</h1>
@@ -55,8 +55,26 @@
 				<button type="button" class="btn">
 					Login
 				</button>
-				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+				<button type="button" class="btn cancel" onclick="closeLogin()">Close</button>
 			</form>
+		</div>
+		<div class="about-popup" id="about">
+			<div class="about-container">
+				<h1>
+					About the Great Avocado War of '24
+				</h1>
+				<div>
+					On February 30th 2024, something happened that would forever change the course of history. Tired of being treated as little more than food, the avocados waged war against the animal kingdom as a whole.<br>
+					<br>
+					At first, the war went well for the avocados and they made short work of the weak human forces. With the humans out of the picture, the avocados thought they had won the war.<br>
+					<br>
+					They were wrong.<br>
+					<br>
+					They were not prepared for the onslaught from the pangolins. The pangolins were ruthless. The avocados found themselves evenly matched.<br>
+					</br>
+					This website exists to serve as an accurate retelling of the Great Avocado War of '24. As for who won the war? You will have to play to find out.
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

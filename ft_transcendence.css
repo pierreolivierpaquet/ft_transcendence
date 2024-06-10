@@ -4,6 +4,24 @@ body
 	margin: 0;
 }
 
+.about-container
+{
+	background-color: black;
+	color: white;
+	width: 50rem;
+	padding: 1rem;
+	text-align: center;
+}
+
+.about-popup
+{
+	display: none;
+	left: calc(100vw/2 - 25rem);
+	position: fixed;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
 .form-container
 {
 	background-color: black;
@@ -19,7 +37,7 @@ body
 	color: black;
 	padding: 1rem;
 	margin: 1rem 0;
-	width :calc(100% - 2rem);
+	width: calc(100% - 2rem);
 }
 
 .form-container input[type=text]:focus, .form-container input[type=password]:focus
