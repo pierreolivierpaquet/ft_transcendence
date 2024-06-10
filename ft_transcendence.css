@@ -18,8 +18,16 @@
 
 .content
 {
-	background-color: red;
+	background-color: white;
+	display: flex;
 	height: 100%;
+}
+
+.content-body
+{
+	background-color: #eeeeee;
+	margin: 1rem auto;
+	width: 90rem;
 }
 
 .form-container
