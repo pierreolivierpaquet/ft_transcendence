@@ -18,6 +18,7 @@ function closeAbout()
 function closeHome()
 {
 	document.getElementById("content").style.filter = "brightness(50%)";
+	document.getElementById("content-body").style.pointerEvents = "none";
 	document.getElementById("home-button").style.color = "";
 	document.getElementById("home-button").style.backgroundColor = "";
 	home_form_enabled = false;
@@ -47,6 +48,7 @@ function openHome()
 	closeAbout();
 	closeLogin();
 	document.getElementById("content").style.filter = "";
+	document.getElementById("content-body").style.pointerEvents = "";
 	document.getElementById("home-button").style.color = "black";
 	document.getElementById("home-button").style.backgroundColor = "white";
 }
