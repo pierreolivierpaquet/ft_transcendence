@@ -41,27 +41,31 @@
 		</div>
 		<div class="login-popup" id="login">
 			<form class="login-container">
-				<h1>
+				<h2 style="margin: 4px">
 					Login
-				</h1>
-				<label for="username">
-					<b>
-						Username
-					</b>
-				</label>
-				<input type="text" placeholder="Enter Username" name="username" required>
-				<label for="psw">
-					<b>
-						Password
-					</b>
-				</label>
-				<input type="password" placeholder="Enter Password" name="psw" required>
-				<button type="button" class="btn">
-					Login
-				</button>
-				<button type="button" class="btn cancel" onclick="openHome()">
-					Close
-				</button>
+				</h2>
+				<div class="frame">
+					<div class="row">
+						<label class="label">
+							Username:
+						</label>
+						<input type="text">
+					</div>
+					<div class="row">
+						<label class="label">
+							Password:
+						</label>
+						<input type="password">
+					</div>
+				</div>
+				<div class="row">
+					<button type="button" class="btn" onclick="openHome()">
+						Cancel
+					</button>
+					<button type="button" class="btn">
+						OK
+					</button>
+				</div>
 			</form>
 		</div>
 		<div class="about-popup" id="about">

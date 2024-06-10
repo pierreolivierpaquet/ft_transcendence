@@ -24,30 +24,20 @@
 
 .btn
 {
-	background-color: white;
-	border: none;
+	background-color: #fcfcfc;
+	border: 1px solid #bcbbbd;
+	border-radius: 3px;
 	color: black;
 	cursor: pointer;
-	margin-bottom:1rem;
-	padding: 1rem;
+	filter: drop-shadow(0 1px #d1d2d3);
+	height: 30px;
+	margin: 4px;
 	width: 100%;
 }
 
 .btn:hover
 {
-	background-color: #ddd;
-}
-
-.cancel
-{
-	background-color: red;
-	margin-bottom: unset;
-	color: white;
-}
-
-.cancel:hover
-{
-	background-color: maroon;
+	border-color: #00b0ef;
 }
 
 .content
@@ -64,28 +54,49 @@
 	width: 90rem;
 }
 
+.frame
+{
+	background-color: #f4f5f5;
+	border: 1px solid #bcbbbd;
+	border-radius: 3px;
+	margin: 4px;
+	padding: 10px;
+}
+
+.label
+{
+	margin: auto 0;
+}
+
 .login-container
 {
-	background-color: black;
-	color: white;
+	background-color: #eff0f1;
+	border: 1px solid #bcbbbd;
+	border-radius: 3px;
+	color: black;
+	display: flex;
+	flex-flow: column;
 	filter: drop-shadow(black 0.5rem 0.5rem 1rem);
 	max-width: 20rem;
-	padding: 1rem;
+	padding: 4px;
+	width: 20rem;
 }
 
 .login-container input[type=text], .login-container input[type=password]
 {
-	background: white;
-	border: none;
+	background-color: #fcfcfc;
+	border: 1px solid #bcbbbd;
+	border-radius: 3px;
+	box-sizing: border-box;
 	color: black;
-	padding: 1rem;
-	margin: 1rem 0;
-	width: calc(100% - 2rem);
+	height: 30px;
+	margin: 4px;
+	width: 100%;
 }
 
-.login-container input[type=text]:focus, .login-container input[type=password]:focus
+.login-container input[type=text]:hover, .login-container input[type=password]:hover, .login-container input[type=text]:focus, .login-container input[type=password]:focus
 {
-	background-color: #ddd;
+	border-color: #00b0ef;
 	outline: none;
 }
 
@@ -135,6 +146,11 @@
 	margin: auto;
 	padding: 1rem;
 	width: 90rem;
+}
+
+.row
+{
+	display: flex;
 }
 
 .subtitle
