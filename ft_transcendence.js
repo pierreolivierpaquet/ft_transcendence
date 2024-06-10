@@ -2,6 +2,11 @@ let	about_form_enabled = false;
 let	home_form_enabled = true;
 let	login_form_enabled = false;
 
+function click()
+{
+	console.log("click!");
+}
+
 function closeAbout()
 {
 	document.getElementById("about").style.display = "none";
@@ -12,6 +17,7 @@ function closeAbout()
 
 function closeHome()
 {
+	document.getElementById("content").style.filter = "brightness(50%)";
 	document.getElementById("home-button").style.color = "";
 	document.getElementById("home-button").style.backgroundColor = "";
 	home_form_enabled = false;
@@ -48,9 +54,9 @@ function openHome()
 	home_form_enabled = true;
 	closeAbout();
 	closeLogin();
+	document.getElementById("content").style.filter = "";
 	document.getElementById("home-button").style.color = "black";
 	document.getElementById("home-button").style.backgroundColor = "white";
-	document.getElementById("home").style.display = "block";
 }
 
 function openLogin()
