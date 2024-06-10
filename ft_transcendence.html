@@ -21,19 +21,21 @@
 				</div>
 			</div>
 			<div class=navbar-content>
-				<a>
+				<div class="navbar-button" id="home-button" onclick="openHome()" style="color: black; background-color: white;">
 					Home
-				</a>
-				<a>
+				</div>
+				<div class="navbar-button">
 					Leaderboard
-				</a>
-				<a id="login-button" onclick="openLogin()">
+				</div>
+				<div class="navbar-button" id="login-button" onclick="openLogin()">
 					Log in
-				</button>
-				<a id="about-button" onclick="openAbout()">
+				</div>
+				<div class="navbar-button" id="about-button" onclick="openAbout()">
 					About
-				</a>
+				</div>
 			</div>
+		</div>
+		<div class="content">
 		</div>
 		<div class="form-popup" id="login">
 			<form class="form-container">
@@ -55,7 +57,7 @@
 				<button type="button" class="btn">
 					Login
 				</button>
-				<button type="button" class="btn cancel" onclick="closeLogin()">Close</button>
+				<button type="button" class="btn cancel" onclick="openLogin()">Close</button>
 			</form>
 		</div>
 		<div class="about-popup" id="about">
