@@ -11,8 +11,8 @@
 	border-radius: 3px;
 	color: #222629;
 	cursor: pointer;
+	display: flex;
 	filter: drop-shadow(0 1px #d1d2d3);
-	height: 30px;
 	margin: 4px;
 	transition: border-color 0.25s ease-out;
 	white-space: nowrap;
@@ -99,6 +99,13 @@
 	padding: 10px;
 }
 
+.icon
+{
+	height: 22px;
+	margin: 4px;
+	width: 22px;
+}
+
 .label
 {
 	margin: auto 0;
@@ -163,7 +170,11 @@
 .row
 {
 	display: flex;
-	margin-left: auto;
+}
+
+.spacer
+{
+	width: 100%;
 }
 
 .subtitle
