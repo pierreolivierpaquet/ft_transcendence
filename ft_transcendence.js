@@ -2,7 +2,7 @@ let	about_form_enabled = false;
 let	home_form_enabled = true;
 let	login_form_enabled = false;
 let	signup_form_enabled = false;
-let	active_tab;
+let	active_tab = 1;
 
 function click()
 {
@@ -45,7 +45,7 @@ function closeSignup()
 function openAbout()
 {
 	about_form_enabled = true;
-	active_tab = 1;
+	switchTab(1);
 	closeLogin();
 	closeHome();
 	closeSignup();
