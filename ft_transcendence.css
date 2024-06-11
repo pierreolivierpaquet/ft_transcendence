@@ -1,4 +1,28 @@
-.btn
+.borderless-button
+{
+	background-color: inherit;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	cursor: pointer;
+	display: flex;
+	margin: 4px;
+	transition: border-color 0.25s ease-out;
+	white-space: nowrap;
+	width: min-content;
+}
+
+.borderless-button:active
+{
+	transition: background-color 0.25s ease-out;
+	background-color: #9ed0e8 !important;
+}
+
+.borderless-button:hover
+{
+	border-color: #00b0ef !important;
+}
+
+.button
 {
 	background-color: #fcfcfc;
 	border: 1px solid #bcbbbd;
@@ -13,20 +37,20 @@
 	width: min-content;
 }
 
-.btn:active
+.button:active
 {
 	transition: border-color 0.25s ease-out;
 	background-color: #b2e3f8;
 	border-color: #00b0ef;
 }
 
-.btn:focus
+.button:focus
 {
 	background-color: #d0edfa;
 	border-color: #65b3d2;
 }
 
-.btn:hover
+.button:hover
 {
 	border-color: #00b0ef;
 }
@@ -212,24 +236,6 @@
 	filter: drop-shadow(0 1px #d1d2d3);
 	height: 45px;
 	overflow: hidden;
-}
-
-.toolbar-button
-{
-	background-color: inherit;
-	border: 1px solid transparent;
-	border-radius: 3px;
-	cursor: pointer;
-	display: flex;
-	margin: 4px;
-	transition: border-color 0.25s ease-out;
-	white-space: nowrap;
-	width: min-content;
-}
-
-.toolbar-button:hover
-{
-	border-color: #00b0ef !important;
 }
 
 .toolbar-content

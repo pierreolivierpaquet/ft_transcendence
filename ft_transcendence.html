@@ -11,28 +11,30 @@
 		</head>
 		<div class="toolbar" id="toolbar">
 			<div class="toolbar-content">
-				<button type="button" class="toolbar-button" id="home-button" onclick="openHome()" style="border-color: #bbbcbd; background-color: #c5c9cb">
+				<button type="button" class="borderless-button" id="home-button" onclick="openHome()" style="border-color: #bbbcbd; background-color: #c5c9cb">
 					<img class="icon" src="icons/go-home.svg">
 					<div class="label">
 						Home
 					</div>
 				</button>
-				<button type="button" class="toolbar-button">
+				<button type="button" class="borderless-button">
 					<img class="icon" src="icons/games-highscores.svg">
 					<div class="label">
 						Leaderboard
 					</div>
 				</button>
-				<button type="button" class="toolbar-button" id="login-button" onclick="openLogin()">
-					<img class="icon" src="icons/im-user.svg">
-					<div class="label">
-						Log in
-					</div>
-				</button>
-				<button type="button" class="toolbar-button" id="about-button" onclick="openAbout()">
+				<button type="button" class="borderless-button" id="about-button" onclick="openAbout()">
 					<img class="icon" src="icons/help-about.svg">
 					<div class="label">
 						About
+					</div>
+				</button>
+				<div class="spacer">
+				</div>
+				<button type="button" class="borderless-button" id="login-button" onclick="openLogin()">
+					<img class="icon" src="icons/im-user.svg">
+					<div class="label">
+						Log in
 					</div>
 				</button>
 			</div>
@@ -83,7 +85,7 @@
 							Database
 						</i>
 						<br>
-						<button type="button" class="toolbar-button" id="about-button" onclick="openAbout()" title="Visit contributor's homepage&#013;https://github.com/Nyonyx">
+						<button type="button" class="borderless-button" id="about-button" onclick="openAbout()" title="Visit contributor's homepage&#013;https://github.com/Nyonyx">
 							<a href="https://github.com/Nyonyx" target="_blank">
 								<img class="icon" src="icons/globe.svg">
 							</a>
@@ -96,7 +98,7 @@
 							Game
 						</i>
 						<br>
-						<button type="button" class="toolbar-button" id="about-button" onclick="openAbout()" title="Visit contributor's homepage&#013;https://github.com/ShroomySquid">
+						<button type="button" class="borderless-button" id="about-button" onclick="openAbout()" title="Visit contributor's homepage&#013;https://github.com/ShroomySquid">
 							<a href="https://github.com/ShroomySquid" target="_blank">
 								<img class="icon" src="icons/globe.svg">
 							</a>
@@ -109,7 +111,7 @@
 							Interface
 						</i>
 						<br>
-						<button type="button" class="toolbar-button" id="about-button" onclick="openAbout()" title="Visit contributor's homepage&#013;https://github.com/lcouturi">
+						<button type="button" class="borderless-button" id="about-button" onclick="openAbout()" title="Visit contributor's homepage&#013;https://github.com/lcouturi">
 							<a href="https://github.com/lcouturi" target="_blank">
 								<img class="icon" src="icons/globe.svg">
 							</a>
@@ -122,7 +124,7 @@
 							Backend
 						</i>
 						<br>
-						<button type="button" class="toolbar-button" id="about-button" onclick="openAbout()" title="Visit contributor's homepage&#013;https://github.com/pierreolivierpaquet">
+						<button type="button" class="borderless-button" id="about-button" onclick="openAbout()" title="Visit contributor's homepage&#013;https://github.com/pierreolivierpaquet">
 							<a href="https://github.com/pierreolivierpaquet" target="_blank">
 								<img class="icon" src="icons/globe.svg">
 							</a>
@@ -135,7 +137,7 @@
 							3D Rendering
 						</i>
 						<br>
-						<button type="button" class="toolbar-button" id="about-button" onclick="openAbout()" title="Visit contributor's homepage&#013;https://github.com/joeroeg">
+						<button type="button" class="borderless-button" id="about-button" onclick="openAbout()" title="Visit contributor's homepage&#013;https://github.com/joeroeg">
 							<a href="https://github.com/joeroeg" target="_blank">
 								<img class="icon" src="icons/globe.svg">
 							</a>
@@ -145,7 +147,7 @@
 				<div class="row">
 					<div class="spacer">
 					</div>
-					<button type="button" class="btn cancel" onclick="openHome()">
+					<button type="button" class="button" onclick="openHome()">
 						<img class="icon" src="icons/window-close.svg">
 						<div class="label">
 							Close
@@ -176,7 +178,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<button type="button" class="btn" onclick="openSignup()">
+					<button type="button" class="button" onclick="openSignup()">
 						<img class="icon" src="icons/list-add-user.svg">
 						<div class="label">
 							Sign up
@@ -184,13 +186,13 @@
 					</button>
 					<div class="spacer">
 					</div>
-					<button type="button" class="btn" onclick="openHome()">
+					<button type="button" class="button" onclick="openHome()">
 						<img class="icon" src="icons/dialog-cancel.svg">
 						<div class="label">
 							Cancel
 						</div>
 					</button>
-					<button type="button" class="btn">
+					<button type="button" class="button">
 						<img class="icon" src="icons/dialog-ok-apply.svg">
 						<div class="label">
 							OK
@@ -227,13 +229,13 @@
 				<div class="row">
 					<div class="spacer">
 					</div>
-					<button type="button" class="btn" onclick="openLogin()">
+					<button type="button" class="button" onclick="openLogin()">
 						<img class="icon" src="icons/dialog-cancel.svg">
 						<div class="label">
 							Cancel
 						</div>
 					</button>
-					<button type="button" class="btn">
+					<button type="button" class="button">
 						<img class="icon" src="icons/dialog-ok-apply.svg">
 						<div class="label">
 							OK
