@@ -9,30 +9,32 @@
 			</script>
 			<link rel="stylesheet" href="ft_transcendence.css" />
 		</head>
-		<div class=navbar>
-			<div class=logo>
-				<div class=title onclick="openHome()">
-					The Great Avocado War of '24
-				</div>
-				<div class=subtitle onclick="openHome()">
-					<i>
-						An ft_transcendence production.
-					</i>
-				</div>
-			</div>
-			<div class=navbar-content>
-				<div class="navbar-button" id="home-button" onclick="openHome()" style="color: black; background-color: white;">
-					Home
-				</div>
-				<div class="navbar-button">
-					Leaderboard
-				</div>
-				<div class="navbar-button" id="login-button" onclick="openLogin()">
-					Log in
-				</div>
-				<div class="navbar-button" id="about-button" onclick="openAbout()">
-					About
-				</div>
+		<div class="toolbar" id="toolbar">
+			<div class="toolbar-content">
+				<button type="button" class="toolbar-button" id="home-button" onclick="openHome()" style="border-color: #bbbcbd; background-color: #c5c9cb">
+					<img class="icon" src="icons/go-home.svg">
+					<div class="label">
+						Home
+					</div>
+				</button>
+				<button type="button" class="toolbar-button">
+					<img class="icon" src="icons/games-highscores.svg">
+					<div class="label">
+						Leaderboard
+					</div>
+				</button>
+				<button type="button" class="toolbar-button" id="login-button" onclick="openLogin()">
+					<img class="icon" src="icons/im-user.svg">
+					<div class="label">
+						Log in
+					</div>
+				</button>
+				<button type="button" class="toolbar-button" id="about-button" onclick="openAbout()">
+					<img class="icon" src="icons/help-about.svg">
+					<div class="label">
+						About
+					</div>
+				</button>
 			</div>
 		</div>
 		<div class="content" id="content" onclick="openHome()">
@@ -44,17 +46,96 @@
 				<h2 class="popup-label">
 					The Great Avocado War of '24
 				</h2>
-				<div class="frame">
-					<div class="about-blurb">
-						On February 30th 2024, something happened that would forever change the course of history. Tired of being treated as little more than food, the avocados waged war against the animal kingdom as a whole.<br>
+				<div class="tabs">
+					<div class="tab-row">
+						<div class="tab active" id="tab1" onclick='switchTab(1)'>
+							About
+						</div>
+						<div class="tab" id="tab2" onclick='switchTab(2)'>
+							Authors
+						</div>
+					</div>
+					<div class="tab-body active" id="tab-body1">
+						On February 30th 2024, something happened that would forever change the course of history. Tired of being treated as little more than food, the avocados waged war against the animal kingdom as a whole.
 						<br>
-						At first, the war went well for the avocados and they made short work of the weak human forces. With the humans out of the picture, the avocados thought they had won the war.<br>
 						<br>
-						They were wrong.<br>
+						At first, the war went well for the avocados and they made short work of the weak human forces. With the humans out of the picture, the avocados thought they had won the war.
 						<br>
-						They were not prepared for the onslaught from the pangolins. The pangolins were ruthless. The avocados found themselves evenly matched.<br>
-						</br>
+						<br>
+						They were wrong.
+						<br>
+						<br>
+						They were not prepared for the onslaught from the pangolins. The pangolins were ruthless. The avocados found themselves evenly matched.
+						<br>
+						<br>
 						This website exists to serve as an accurate retelling of the Great Avocado War of '24. As for who won the war? You will have to play to find out.
+					</div>
+					<div class="tab-body" id="tab-body2">
+						<b>
+							Bruno Pierre Bouchard
+						</b>
+						<br>
+						<i>
+							Database
+						</i>
+						<br>
+						<button type="button" class="toolbar-button" id="about-button" onclick="openAbout()" title="Visit contributor's homepage&#013;https://github.com/Nyonyx">
+							<a href="https://github.com/Nyonyx" target="_blank">
+								<img class="icon" src="icons/globe.svg">
+							</a>
+						</button>
+						<b>
+							Félix Barrette
+						</b>
+						<br>
+						<i>
+							Game
+						</i>
+						<br>
+						<button type="button" class="toolbar-button" id="about-button" onclick="openAbout()" title="Visit contributor's homepage&#013;https://github.com/ShroomySquid">
+							<a href="https://github.com/ShroomySquid" target="_blank">
+								<img class="icon" src="icons/globe.svg">
+							</a>
+						</button>
+						<b>
+							Léopold Couturier-Otis
+						</b>
+						<br>
+						<i>
+							Interface
+						</i>
+						<br>
+						<button type="button" class="toolbar-button" id="about-button" onclick="openAbout()" title="Visit contributor's homepage&#013;https://github.com/lcouturi">
+							<a href="https://github.com/lcouturi" target="_blank">
+								<img class="icon" src="icons/globe.svg">
+							</a>
+						</button>
+						<b>
+							 Pierre Olivier Paquet
+						</b>
+						<br>
+						<i>
+							Backend
+						</i>
+						<br>
+						<button type="button" class="toolbar-button" id="about-button" onclick="openAbout()" title="Visit contributor's homepage&#013;https://github.com/pierreolivierpaquet">
+							<a href="https://github.com/pierreolivierpaquet" target="_blank">
+								<img class="icon" src="icons/globe.svg">
+							</a>
+						</button>
+						<b>
+							 George Zhukov
+						</b>
+						<br>
+						<i>
+							3D Rendering
+						</i>
+						<br>
+						<button type="button" class="toolbar-button" id="about-button" onclick="openAbout()" title="Visit contributor's homepage&#013;https://github.com/joeroeg">
+							<a href="https://github.com/joeroeg" target="_blank">
+								<img class="icon" src="icons/globe.svg">
+							</a>
+						</button>
 					</div>
 				</div>
 				<div class="row">
@@ -92,6 +173,7 @@
 				</div>
 				<div class="row">
 					<button type="button" class="btn" onclick="openSignup()">
+						<img class="icon" src="icons/list-add-user.svg">
 						<div class="label">
 							Sign up
 						</div>
@@ -158,4 +240,3 @@
 		</div>
 	</body>
 </html>
-

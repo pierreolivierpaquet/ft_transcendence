@@ -113,45 +113,6 @@
 	white-space: nowrap;
 }
 
-.logo
-{
-	display: flex;
-	flex-flow: column;
-	margin: auto;
-	text-align: center;
-	width: fit-content;
-}
-
-.navbar
-{
-	background-color: black;
-	color: white;
-	overflow: hidden;
-	padding-top: 1rem;
-}
-
-.navbar-button
-{
-	font-size: 1rem;
-	text-align: center;
-	padding: 1rem;
-}
-
-.navbar-button:hover
-{
-	background-color: white;
-	color: black;
-	cursor: pointer;
-}
-
-.navbar-content
-{
-	display: flex;
-	margin: auto;
-	padding: 1rem;
-	width: 90rem;
-}
-
 .popup
 {
 	display: block;
@@ -177,17 +138,104 @@
 	width: 100%;
 }
 
-.subtitle
+.tab
 {
-	cursor: pointer;
-	font-size: 1rem;
-	text-align: center;
+	border: 1px solid #c7c8c9;
+	border-bottom: none;
+	border-color: transparent;
+	border-top-width: 3px;
+	display: inline-block;
+	padding: 4px;
+	transition: background-color 0.25s ease-out, border-color 0.25s ease-out;
 }
 
-.title
+.tab:hover
 {
+	background-color: #c5e4f2;
+	border-color: #c5e4f2;
+}
+
+.tab.active
+{
+	background-color: #f4f5f5 !important;
+	border-color: #c7c8c9 !important;
+	border-top-color: #00b0ef !important;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	transition: unset;
+	z-index: 2;
+}
+
+.tab-body
+{
+	background-color: #f4f5f5;
+	border: 1px solid #bcbebf;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+	display: none;
+	max-width: 50rem;
+	padding: 4px;
+	position: relative;
+	text-align: left;
+	z-index: 1;
+}
+
+.tab-body.active
+{
+	display: block;
+}
+
+.tab-row
+{
+	background-color: #c7c8c9;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	bottom: -1px;
+	display: flex;
+	position: relative;
+	width: min-content;
+}
+
+.tabs
+{
+	display: block;
+	margin: 4px;
+}
+
+.toolbar
+{
+	background-color: #dee0e2;
+	border-bottom: 1px solid #aeb2b4;
+	color: black;
+	filter: drop-shadow(0 1px #d1d2d3);
+	height: 45px;
+	overflow: hidden;
+}
+
+.toolbar-button
+{
+	background-color: inherit;
+	border: 1px solid transparent;
+	border-radius: 3px;
 	cursor: pointer;
-	font-size: 2rem;
+	display: flex;
+	margin: 4px;
+	transition: border-color 0.25s ease-out;
+	white-space: nowrap;
+	width: min-content;
+}
+
+.toolbar-button:hover
+{
+	border-color: #00b0ef !important;
+}
+
+.toolbar-content
+{
+	display: flex;
+	margin: auto;
+	width: 90rem;
 }
 
 body
