@@ -5,21 +5,23 @@
 
 .about-container
 {
-	background-color: black;
-	color: white;
+	background-color: #eff0f1;
+	border: 1px solid #bcbbbd;
+	border-radius: 3px;
+	color: black;
 	filter: drop-shadow(black 0.5rem 0.5rem 1rem);
-	padding: 1rem;
+	padding: 4px;
 	text-align: center;
 	width: 50rem;
 }
 
 .about-popup
 {
-	display: none;
+	display: block;
 	left: calc(100vw/2 - 25rem);
 	position: fixed;
 	top: 50%;
-	transform: translate(0, -50%);
+	transform: translate(100vw, -50%);
 }
 
 .btn
@@ -27,12 +29,27 @@
 	background-color: #fcfcfc;
 	border: 1px solid #bcbbbd;
 	border-radius: 3px;
-	color: black;
+	color: #222629;
 	cursor: pointer;
 	filter: drop-shadow(0 1px #d1d2d3);
 	height: 30px;
 	margin: 4px;
-	width: 100%;
+	transition: border-color 0.25s ease-out;
+	width: -webkit-fill-available;
+	width: -moz-available;
+}
+
+.btn:active
+{
+	transition: border-color 0.25s ease-out;
+	background-color: #b2e3f8;
+	border-color: #00b0ef;
+}
+
+.btn:focus
+{
+	background-color: #d0edfa;
+	border-color: #65b3d2;
 }
 
 .btn:hover
@@ -45,6 +62,7 @@
 	background-color: white;
 	display: flex;
 	height: 100%;
+	transition: filter 0.25s ease-out;
 }
 
 .content-body
@@ -77,7 +95,6 @@
 	display: flex;
 	flex-flow: column;
 	filter: drop-shadow(black 0.5rem 0.5rem 1rem);
-	max-width: 20rem;
 	padding: 4px;
 	width: 20rem;
 }
@@ -98,15 +115,16 @@
 {
 	border-color: #00b0ef;
 	outline: none;
+	transition: border-color 0.25s ease-out;
 }
 
 .login-popup
 {
-	display: none;
+	display: block;
 	left: calc(100vw/2 - 10rem);
 	position: fixed;
 	top: 50%;
-	transform: translate(0, -50%);
+	transform: translate(100vw, -50%);
 }
 
 .logo

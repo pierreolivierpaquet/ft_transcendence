@@ -9,7 +9,7 @@ function click()
 
 function closeAbout()
 {
-	document.getElementById("about").style.display = "none";
+	document.getElementById("about").style.transform = "translate(100vw, -50%)";
 	document.getElementById("about-button").style.color = "";
 	document.getElementById("about-button").style.backgroundColor = "";
 	about_form_enabled = false;
@@ -26,7 +26,7 @@ function closeHome()
 
 function closeLogin()
 {
-	document.getElementById("login").style.display = "none";
+	document.getElementById("login").style.transform = "translate(100vw, -50%)";
 	document.getElementById("login-button").style.color = "";
 	document.getElementById("login-button").style.backgroundColor = "";
 	login_form_enabled = false;
@@ -39,7 +39,8 @@ function openAbout()
 	closeHome();
 	document.getElementById("about-button").style.color = "black";
 	document.getElementById("about-button").style.backgroundColor = "white";
-	document.getElementById("about").style.display = "block";
+	document.getElementById("about").style.transition = "transform 0.25s ease-out";
+	document.getElementById("about").style.transform = "translate(0, -50%)";
 }
 
 function openHome()
@@ -60,5 +61,6 @@ function openLogin()
 	closeHome();
 	document.getElementById("login-button").style.color = "black";
 	document.getElementById("login-button").style.backgroundColor = "white";
-	document.getElementById("login").style.display = "block";
+	document.getElementById("login").style.transition = "transform 0.25s ease-out";
+	document.getElementById("login").style.transform = "translate(0, -50%)";
 }
