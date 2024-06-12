@@ -19,5 +19,11 @@ RUN chmod +x /usr/local/bin/dependencies.sh && \
 
 EXPOSE 8000
 
-CMD [ "python", "./ft_transcendence/manage.py", "runserver", "0.0.0.0:8000"]
+# Setting up ENTRYPOINT script.
+COPY ./tools/entrypoint.sh /usr/local/bin
+RUN chmod +x /usr/local/bin/entrypoint.sh
+
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
+
+CMD ["python", "./ft_transcendence/manage.py", "runserver", "0.0.0.0:8000"]
 # CMD ["tail", "-f", "/dev/urandom"]
