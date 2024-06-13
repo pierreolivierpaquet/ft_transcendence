@@ -4,9 +4,9 @@ volumes:
     name: volume-django
     driver: local
     driver_opts:
-      type: none
-      device: ~/data/volume-django
-      o: bind
+      type: 'none'
+      o: 'bind'
+      device: ${HOME}/data/volume-django
 
 services:
   django:
