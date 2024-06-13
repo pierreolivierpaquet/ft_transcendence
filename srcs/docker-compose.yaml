@@ -1,4 +1,13 @@
 
+volumes:
+  volume-django:
+    name: volume-django
+    driver: local
+    driver_opts:
+      type: none
+      device: ~/data/volume-django
+      o: bind
+
 services:
   django:
     build:
@@ -7,5 +16,8 @@ services:
     image: django:transcendence
     container_name: django
     restart: on-failure:10
+#   Binds the HOST ~/data/volume-django -> CONTAINER /usr/src/app/ft_transcendence folder.
+    volumes:
+      - volume-django:/usr/src/app
     ports:
       - "8080:8000"

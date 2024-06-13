@@ -1,5 +1,7 @@
 #!/bin/bash
 
-python ./ft_transcendence/manage.py startapp avocado
+cd ./ft_transcendence
+python manage.py startapp avocado
+cd -
 
 exec $@
