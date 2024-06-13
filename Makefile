@@ -21,7 +21,12 @@ rm_images: rm_ps
 			| grep 'django' | awk '{print $$1}');\
 		fi
 
+rm_volume:
+	@	ARG=$$(docker volume ls --format {{.Name}}); if echo $$ARG | grep -q 'volume-django'; then \
+			docker volume rm $$ARG; \
+		fi
+
 clean: rm_images
 
 nuke: clean
-	@	docker system prune --all --force
+	@	docker system prune --all --force --volumes
