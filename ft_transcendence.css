@@ -177,6 +177,7 @@
 	display: inline-block;
 	padding: 4px;
 	transition: background-color 0.25s ease-out, border-color 0.25s ease-out;
+	white-space: nowrap;
 }
 
 .tab:hover
