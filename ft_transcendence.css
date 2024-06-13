@@ -1,4 +1,4 @@
-.borderless-button
+.borderless-button, .nav-item
 {
 	background-color: inherit;
 	border: 1px solid transparent;
@@ -11,13 +11,13 @@
 	width: min-content;
 }
 
-.borderless-button:active
+.borderless-button:active, .nav-item:active
 {
 	transition: background-color 0.25s ease-out;
 	background-color: #9ed0e8 !important;
 }
 
-.borderless-button:hover
+.borderless-button:hover, .nav-item:hover
 {
 	border-color: #00b0ef !important;
 }
@@ -141,6 +141,16 @@
 	white-space: nowrap;
 }
 
+.navbar
+{
+	background-color: #dee0e2 !important;
+	border-bottom: 1px solid #aeb2b4;
+	color: black;
+	filter: drop-shadow(0 1px #d1d2d3);
+	padding: 0 !important;
+	transition: filter 0.25s ease-out;
+}
+
 .popup
 {
 	display: block;
@@ -246,7 +256,7 @@
 
 .toolbar-content
 {
-	display: flex;
+/*	display: flex;*/
 	margin: auto;
 	max-width: 90rem;
 }

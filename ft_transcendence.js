@@ -4,6 +4,11 @@ let	login_form_enabled = false;
 let	signup_form_enabled = false;
 let	active_tab = 1;
 
+window.onload = function start()
+{
+	openHome();
+}
+
 function click()
 {
 	console.log("click!");
