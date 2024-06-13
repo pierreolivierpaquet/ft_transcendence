@@ -55,7 +55,7 @@
 	border-color: #00b0ef;
 }
 
-.column
+.column_t
 {
 	display: flex;
 	flex-flow: column;
@@ -156,7 +156,7 @@
 	text-align: left;
 }
 
-.row
+.row_t
 {
 	display: flex;
 	width: 100%;
