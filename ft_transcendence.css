@@ -94,6 +94,12 @@
 	transition: border-color 0.25s ease-out;
 }
 
+.container-fluid
+{
+	max-width: 90rem;
+	padding: 0 !important;
+}
+
 .content
 {
 	background-color: #eff0f1;
@@ -139,6 +145,12 @@
 	margin: auto 0;
 	text-align: right;
 	white-space: nowrap;
+}
+
+.nav-link
+{
+	margin: auto 4px;
+	padding: unset !important;
 }
 
 .navbar
@@ -243,22 +255,6 @@
 {
 	display: block;
 	margin: 4px;
-}
-
-.toolbar
-{
-	background-color: #dee0e2;
-	border-bottom: 1px solid #aeb2b4;
-	color: black;
-	filter: drop-shadow(0 1px #d1d2d3);
-	transition: filter 0.25s ease-out;
-}
-
-.toolbar-content
-{
-/*	display: flex;*/
-	margin: auto;
-	max-width: 90rem;
 }
 
 body

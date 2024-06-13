@@ -14,36 +14,6 @@
 			<script src="bootstrap/js/bootstrap.js">
 			</script>
 		</head>
-<!--	<div class="toolbar" id="toolbar">
-			<div class="toolbar-content">
-				<button type="button" class="borderless-button" id="home-button" onclick="openHome()" style="border-color: #bbbcbd; background-color: #c5c9cb" title="Home">
-					<img class="icon" src="icons/go-home.svg">
-					<div class="label">
-						Home
-					</div>
-				</button>
-				<button type="button" class="borderless-button" title="Leaderboard">
-					<img class="icon" src="icons/games-highscores.svg">
-					<div class="label">
-						Leaderboard
-					</div>
-				</button>
-				<button type="button" class="borderless-button" id="about-button" onclick="openAbout()" title="About">
-					<img class="icon" src="icons/help-about.svg">
-					<div class="label">
-						About
-					</div>
-				</button>
-				<div class="spacer">
-				</div>
-				<button type="button" class="borderless-button" id="login-button" onclick="openLogin()" title="Log in">
-					<img class="icon" src="icons/im-user.svg">
-					<div class="label">
-						Log in
-					</div>
-				</button>
-			</div>
-		</div>-->
 		<nav class="navbar navbar-expand-lg bg-body-tertiary" id="toolbar">
 			<div class="container-fluid">
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,19 +23,28 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item" id="home-button" onclick="openHome()" title="Home">
-							<a class="nav-link active" aria-current="page" href="#">
+							<img class="icon" src="icons/go-home.svg">
+							<a class="nav-link active" aria-current="page">
 								Home
 							</a>
 						</li>
+						<li class="nav-item" title="Leaderboard">
+							<img class="icon" src="icons/games-highscores.svg">
+							<a class="nav-link active" aria-current="page">
+								Leaderboard
+							</a>
+						</li>
 						<li class="nav-item" id="about-button" onclick="openAbout()" title="About">
-							<a class="nav-link active" aria-current="page" href="#">
+							<img class="icon" src="icons/help-about.svg">
+							<a class="nav-link active" aria-current="page">
 								About
 							</a>
 						</li>
 					</ul>
 					<ul class="navbar-nav mb-2 mb-lg-0">
 						<li class="nav-item" id="login-button" onclick="openLogin()" title="Log in">
-							<a class="nav-link active" aria-current="page" href="#">
+							<img class="icon" src="icons/im-user.svg">
+							<a class="nav-link active" aria-current="page">
 								Log in
 							</a>
 						</li>
