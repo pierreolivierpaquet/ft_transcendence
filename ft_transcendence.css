@@ -37,6 +37,11 @@
 	width: min-content;
 }
 
+.button .label
+{
+	cursor: pointer;
+}
+
 .button:active
 {
 	transition: border-color 0.25s ease-out;
@@ -53,6 +58,25 @@
 .button:hover
 {
 	border-color: #00b0ef;
+}
+
+.button.inactive
+{
+	background-color: #f0f0f0;
+	border-color: #dadbdb;
+	color: #a8a9aa;
+	cursor: default !important;
+}
+
+.button.inactive .label
+{
+	cursor: default;
+}
+
+.button.inactive .icon
+{
+	cursor: default;
+	filter: invert(82%) sepia(0%) saturate(780%) hue-rotate(238deg) brightness(116%) contrast(79%);
 }
 
 .column_t
