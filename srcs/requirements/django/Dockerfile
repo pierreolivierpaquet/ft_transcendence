@@ -4,6 +4,8 @@
 FROM python:3.12
 
 WORKDIR /usr/src/app
+# test delete
+COPY ./ft_transcendence/ ./ft_transcendence/
 
 # Required package(s) installation.
 COPY ./tools/requirements.txt ./

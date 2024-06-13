@@ -1,3 +1,5 @@
 #!/bin/bash
 
-django-admin startproject ft_transcendence
+# if [ ! -d /usr/src/app/ft_transcendence ]; then \
+# 	django-admin startproject ft_transcendence; \
+# fi
