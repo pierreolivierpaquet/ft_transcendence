@@ -28,5 +28,5 @@ rm_volume:
 
 clean: rm_images
 
-nuke: clean
+nuke: clean rm_volume
 	@	docker system prune --all --force --volumes

@@ -4,7 +4,9 @@
 FROM python:3.12
 
 WORKDIR /usr/src/app
-# test delete
+
+# UNCOMMENT to use the provided ./ft_transcendence application.
+# If !COMMENTED, make sure to COMMENT the VOLUME attributes in the docker-compose.yaml file.
 COPY ./ft_transcendence/ ./ft_transcendence/
 
 # Required package(s) installation.

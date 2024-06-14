@@ -30,7 +30,9 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+# ppaquet: added avocado.
 INSTALLED_APPS = [
+    'avocado',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
