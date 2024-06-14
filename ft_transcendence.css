@@ -177,6 +177,60 @@
 	padding: unset !important;
 }
 
+.nav-tabs
+{
+	--bs-nav-link-color: unset !important;
+	--bs-nav-tabs-border-width: unset !important;
+	background-color: #c7c8c9;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	bottom: -1px;
+	color: black;
+	display: flex;
+	flex-wrap: unset !important;
+	margin: 4px 4px 0;
+	position: relative;
+	width: min-content;
+}
+
+.nav-tabs .nav-item
+{
+	border: unset;
+	margin: unset;
+}
+
+.nav-tabs .nav-item .nav-link
+{
+	border: 1px solid #c7c8c9;
+	border-bottom: none;
+	border-color: transparent;
+	border-radius: 0px;
+	border-top-width: 3px;
+	cursor: default;
+	display: inline-block;
+	margin: unset;
+	padding: 0 4px !important;
+	transition: background-color 0.25s ease-out, border-color 0.25s ease-out;
+	white-space: nowrap;
+}
+
+.nav-tabs .nav-item .nav-link:hover
+{
+	background-color: #c5e4f2;
+	border-color: #c5e4f2;
+}
+
+.nav-tabs .nav-item .nav-link.active
+{
+	background-color: #f4f5f5 !important;
+	border-color: #bcbebf !important;
+	border-top-color: #00b0ef !important;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	transition: unset;
+	z-index: 2;
+}
+
 .navbar
 {
 	background-color: #dee0e2 !important;
@@ -213,37 +267,7 @@
 	width: 100%;
 }
 
-.tab
-{
-	border: 1px solid #c7c8c9;
-	border-bottom: none;
-	border-color: transparent;
-	border-top-width: 3px;
-	cursor: default;
-	display: inline-block;
-	padding: 4px;
-	transition: background-color 0.25s ease-out, border-color 0.25s ease-out;
-	white-space: nowrap;
-}
-
-.tab:hover
-{
-	background-color: #c5e4f2;
-	border-color: #c5e4f2;
-}
-
-.tab.active
-{
-	background-color: #f4f5f5 !important;
-	border-color: #bcbebf !important;
-	border-top-color: #00b0ef !important;
-	border-top-left-radius: 3px;
-	border-top-right-radius: 3px;
-	transition: unset;
-	z-index: 2;
-}
-
-.tab-body
+.tab-pane
 {
 	background-color: #f4f5f5;
 	border: 1px solid #bcbebf;
@@ -251,34 +275,13 @@
 	border-bottom-right-radius: 3px;
 	border-top-right-radius: 3px;
 	display: none;
+	margin: 0 4px 4px;
 	max-height: 50rem;
 	max-width: 50rem;
 	padding: 4px;
 	position: relative;
 	text-align: left;
 	z-index: 1;
-}
-
-.tab-body.active
-{
-	display: block;
-}
-
-.tab-row
-{
-	background-color: #c7c8c9;
-	border-top-left-radius: 3px;
-	border-top-right-radius: 3px;
-	bottom: -1px;
-	display: flex;
-	position: relative;
-	width: min-content;
-}
-
-.tabs
-{
-	display: block;
-	margin: 4px;
 }
 
 body

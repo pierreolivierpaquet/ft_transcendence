@@ -2,7 +2,6 @@ let	about_form_enabled = false;
 let	home_form_enabled = true;
 let	login_form_enabled = false;
 let	signup_form_enabled = false;
-let	active_tab = 1;
 
 window.onload = function start()
 {
@@ -50,7 +49,6 @@ function closeSignup()
 function openAbout()
 {
 	about_form_enabled = true;
-	switchTab(1);
 	closeLogin();
 	closeHome();
 	closeSignup();
@@ -96,13 +94,4 @@ function openSignup()
 	document.getElementById("login-button").style.borderColor = "#bbbcbd";
 	document.getElementById("signup").style.transition = "transform 0.25s ease-out";
 	document.getElementById("signup").style.transform = "translate(-50%, -50%)";
-}
-
-function switchTab(nb)
-{
-	document.getElementById("tab" + active_tab).classList.remove("active");
-	document.getElementById("tab-body" + active_tab).classList.remove("active");
-	active_tab = nb;
-	document.getElementById("tab" + active_tab).classList.add("active");
-	document.getElementById("tab-body" + active_tab).classList.add("active");
 }
