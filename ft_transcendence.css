@@ -1,4 +1,4 @@
-.borderless-button, .nav-item
+.borderless-button
 {
 	background-color: inherit;
 	border: 1px solid transparent;
@@ -6,18 +6,19 @@
 	cursor: pointer;
 	display: flex;
 	margin: 4px;
+	padding: 0;
 	transition: border-color 0.25s ease-out;
 	white-space: nowrap;
 	width: min-content;
 }
 
-.borderless-button:active, .nav-item:active
+.borderless-button:active
 {
 	transition: background-color 0.25s ease-out;
 	background-color: #9ed0e8 !important;
 }
 
-.borderless-button:hover, .nav-item:hover
+.borderless-button:hover
 {
 	border-color: #00b0ef !important;
 }
@@ -120,16 +121,16 @@
 
 .container-fluid
 {
+	--bs-gutter-x: 0 !important;
 	max-width: 90rem;
-	padding: 0 !important;
 }
 
 .content
 {
-	background-color: #eff0f1;
 	display: flex;
 	height: 100%;
-	transition: filter 0.25s ease-out;
+	margin: auto;
+	width: 90rem;
 }
 
 .content-body
@@ -137,8 +138,8 @@
 	background-color: #ffffff;
 	border: 1px solid #bcbbbd;
 	border-radius: 3px;
-	margin: 4px auto;
-	width: 90rem;
+	margin: 4px;
+	width: 100%;
 }
 
 .frame
@@ -152,9 +153,7 @@
 
 .icon
 {
-	height: 22px;
 	margin: 4px;
-	width: 22px;
 }
 
 .inline-img
@@ -171,10 +170,31 @@
 	white-space: nowrap;
 }
 
+.nav-item
+{
+	--bs-border-color: transparent;
+	--bs-border-radius: 3px;
+	cursor: pointer;
+	margin: 4px;
+	transition: border-color 0.25s ease-out;
+}
+
+.nav-item:active
+{
+	transition: background-color 0.25s ease-out;
+	background-color: #9ed0e8 !important;
+}
+
+.nav-item:hover
+{
+	--bs-border-color: #00b0ef;
+}
+
 .nav-link
 {
+	--bs-nav-link-padding-y: 0;
+	--bs-navbar-nav-link-padding-x: 0;
 	margin: auto 4px;
-	padding: unset !important;
 }
 
 .nav-tabs
@@ -185,7 +205,6 @@
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
 	bottom: -1px;
-	color: black;
 	display: flex;
 	flex-wrap: unset !important;
 	margin: 4px 4px 0;
@@ -206,10 +225,12 @@
 	border-color: transparent;
 	border-radius: 0px;
 	border-top-width: 3px;
+	color: black;
 	cursor: default;
 	display: inline-block;
 	margin: unset;
 	padding: 0 4px !important;
+	position: relative;
 	transition: background-color 0.25s ease-out, border-color 0.25s ease-out;
 	white-space: nowrap;
 }
@@ -233,12 +254,10 @@
 
 .navbar
 {
-	background-color: #dee0e2 !important;
-	border-bottom: 1px solid #aeb2b4;
-	color: black;
+	--bs-border-color: #aeb2b4;
+	--bs-navbar-padding-y: 0 !important;
+	--bs-tertiary-bg-rgb: 222, 224, 226;
 	filter: drop-shadow(0 1px #d1d2d3);
-	padding: 0 !important;
-	transition: filter 0.25s ease-out;
 }
 
 .popup
@@ -286,11 +305,10 @@
 
 body
 {
+	--bs-body-bg: #eff0f1;
 	display: flex;
 	flex-flow: column;
-	font-family: system-ui;
 	height: 100%;
-	margin: 0;
 }
 
 html
