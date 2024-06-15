@@ -88,15 +88,11 @@
 
 .container
 {
+	--bs-border-color: #bcbbbd;
+	--bs-border-radius: 3px;
+	--bs-gutter-x: 4px !important;
 	background-color: #eff0f1;
-	border: 1px solid #bcbbbd;
-	border-radius: 3px;
-	color: black;
-	display: flex;
-	flex-flow: column;
-	filter: drop-shadow(black 0.5rem 0.5rem 1rem);
 	padding: 4px;
-	text-align: center;
 }
 
 .container input[type=text], .container input[type=password]
@@ -127,7 +123,6 @@
 
 .content
 {
-	display: flex;
 	height: 100%;
 	margin: auto;
 	width: 90rem;
@@ -135,7 +130,6 @@
 
 .content-body
 {
-	background-color: #ffffff;
 	border: 1px solid #bcbbbd;
 	border-radius: 3px;
 	margin: 4px;
@@ -199,13 +193,9 @@
 
 .nav-tabs
 {
-	--bs-nav-link-color: unset !important;
 	--bs-nav-tabs-border-width: unset !important;
 	background-color: #c7c8c9;
-	border-top-left-radius: 3px;
-	border-top-right-radius: 3px;
 	bottom: -1px;
-	display: flex;
 	flex-wrap: unset !important;
 	margin: 4px 4px 0;
 	position: relative;
@@ -214,7 +204,6 @@
 
 .nav-tabs .nav-item
 {
-	border: unset;
 	margin: unset;
 }
 
@@ -243,8 +232,6 @@
 
 .nav-tabs .nav-item .nav-link.active
 {
-	background-color: #f4f5f5 !important;
-	border-color: #bcbebf !important;
 	border-top-color: #00b0ef !important;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
@@ -262,17 +249,14 @@
 
 .popup
 {
-	display: block;
 	left: 50%;
 	position: fixed;
 	top: 50%;
-	transform: translate(100vw, -50%);
 }
 
 .popup-label
 {
 	margin: 4px;
-	text-align: left;
 }
 
 .row_t
@@ -306,8 +290,6 @@
 body
 {
 	--bs-body-bg: #eff0f1;
-	display: flex;
-	flex-flow: column;
 	height: 100%;
 }
 

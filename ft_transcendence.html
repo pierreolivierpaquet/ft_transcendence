@@ -3,7 +3,7 @@
 	<title>
 		The Great Avocado War of '24
 	</title>
-	<body id="body">
+	<body class="d-flex flex-column">
 		<head>
 			<link rel="stylesheet" href="ft_transcendence.css" />
 			<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
@@ -48,15 +48,15 @@
 				</div>
 			</div>
 		</nav>
-		<div class="content" id="content" onclick="openHome()">
+		<div class="content d-flex" id="content" onclick="openHome()">
 			<img class="content-body" id="content-body" src="icons/placeholder.png">
 		</div>
-		<div class="popup" id="about">
-			<div class="container">
+		<div class="popup shadow" id="about">
+			<div class="border container d-flex flex-column rounded">
 				<h2 class="popup-label">
 					The Great Avocado War of '24
 				</h2>
-				<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<ul class="nav nav-tabs rounded-top" id="myTab" role="tablist">
 					<li class="nav-item" role="presentation">
 						<button class="nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about-tab-pane" type="button" role="tab" aria-controls="about-tab-pane" aria-selected="true">
 							About
@@ -227,8 +227,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="popup" id="login">
-			<div class="container">
+		<div class="popup shadow" id="login">
+			<div class="border container d-flex flex-column rounded">
 				<h2 class="popup-label">
 					Log in
 				</h2>
@@ -272,8 +272,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="popup" id="signup">
-			<div class="container">
+		<div class="popup shadow" id="signup">
+			<div class="border container d-flex flex-column rounded">
 				<h2 class="popup-label">
 					Sign up
 				</h2>
