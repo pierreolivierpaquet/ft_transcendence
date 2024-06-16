@@ -80,12 +80,6 @@
 	filter: invert(82%) sepia(0%) saturate(780%) hue-rotate(238deg) brightness(116%) contrast(79%);
 }
 
-.column_t
-{
-	display: flex;
-	flex-flow: column;
-}
-
 .container
 {
 	--bs-border-color: #bcbbbd;
@@ -176,7 +170,7 @@
 .nav-item:active
 {
 	transition: background-color 0.25s ease-out;
-	background-color: #9ed0e8 !important;
+	background-color: #9ed0e8;
 }
 
 .nav-item:hover
@@ -257,12 +251,6 @@
 .popup-label
 {
 	margin: 4px;
-}
-
-.row_t
-{
-	display: flex;
-	width: 100%;
 }
 
 .spacer
