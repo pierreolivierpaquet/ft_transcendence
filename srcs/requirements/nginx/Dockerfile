@@ -14,6 +14,8 @@ RUN chmod +x /usr/local/bin/entrypoint.sh
 
 # ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
+COPY ./config/default /etc/nginx/sites-available/default
+
 # Starts thw nginx server as a foreground process.
 CMD ["nginx", "-g", "daemon off;"]
 
