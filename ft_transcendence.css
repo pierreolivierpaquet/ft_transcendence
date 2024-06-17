@@ -34,6 +34,23 @@
 	transition: border-color 0.25s ease-out;
 }
 
+.button:disabled
+{
+	--bs-border-color: #dadbdb !important;
+	background-color: #f0f0f0;
+	color: #a8a9aa;
+}
+
+.button:disabled .icon
+{
+	filter: invert(82%) sepia(0%) saturate(780%) hue-rotate(238deg) brightness(116%) contrast(79%);
+}
+
+.button:disabled .label
+{
+	cursor: default;
+}
+
 .button:focus
 {
 	--bs-border-color: #65b3d2;
@@ -43,25 +60,6 @@
 .button:hover
 {
 	--bs-border-color: #00b0ef;
-}
-
-.button.inactive
-{
-	--bs-border-color: #dadbdb;
-	background-color: #f0f0f0;
-	color: #a8a9aa;
-	cursor: default !important;
-}
-
-.button.inactive .label
-{
-	cursor: default;
-}
-
-.button.inactive .icon
-{
-	cursor: default;
-	filter: invert(82%) sepia(0%) saturate(780%) hue-rotate(238deg) brightness(116%) contrast(79%);
 }
 
 .container
@@ -167,9 +165,8 @@
 
 .tab-pane
 {
+	--bs-border-radius: 0 3px 3px;
 	background-color: #f4f5f5;
-	border-radius: 3px;
-	border-top-left-radius: 0;
 	max-width: 50rem;
 }
 
