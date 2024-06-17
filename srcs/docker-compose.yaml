@@ -32,16 +32,16 @@ services:
     ports:
     - "10000:80"
 
-  postgresql:
+  postgre:
     build:
-      context: ./requirements/postgresql
+      context: ./requirements/postgre
       dockerfile: Dockerfile
       args:
         - POSTGRES_USER=${POSTGRES_USER}
         - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
         - POSTGRES_DB=${POSTGRES_DB}
     image: postgresql:transcendence
-    container_name: postgresql
+    container_name: postgre
     environment:
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
