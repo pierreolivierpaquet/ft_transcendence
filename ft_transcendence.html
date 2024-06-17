@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en-US">
+<html class="h-100" lang="en-US">
 	<title>
 		The Great Avocado War of '24
 	</title>
-	<body class="d-flex flex-column">
+	<body class="d-flex flex-column h-100">
 		<head>
 			<link rel="stylesheet" href="ft_transcendence.css" />
 			<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
@@ -14,33 +14,33 @@
 			<script src="bootstrap/js/bootstrap.js">
 			</script>
 		</head>
-		<nav class="navbar border-bottom navbar-expand-lg bg-body-tertiary" id="toolbar">
-			<div class="container-fluid">
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<nav class="bg-body-tertiary border-bottom navbar navbar-expand-lg py-0 shadow-sm" id="toolbar">
+			<div class="container-fluid px-0">
+				<div class="navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto">
-						<li class="nav-item border rounded d-flex text-nowrap" id="home-button" onclick="openHome()" title="Home">
-							<img class="icon" height="22" src="icons/go-home.svg">
-							<a class="nav-link active" aria-current="page">
+						<li class="border d-flex m-1 nav-item rounded text-nowrap" id="home-button" onclick="openHome()" title="Home">
+							<img class="icon m-1" height="22" src="icons/go-home.svg">
+							<a class="active mx-1 my-auto nav-link p-0" aria-current="page">
 								Home
 							</a>
 						</li>
-						<li class="nav-item border rounded d-flex text-nowrap" title="Leaderboard">
-							<img class="icon" height="22" src="icons/games-highscores.svg">
-							<a class="nav-link active" aria-current="page">
+						<li class="border d-flex m-1 nav-item rounded text-nowrap" title="Leaderboard">
+							<img class="icon m-1" height="22" src="icons/games-highscores.svg">
+							<a class="active mx-1 my-auto nav-link p-0" aria-current="page">
 								Leaderboard
 							</a>
 						</li>
-						<li class="nav-item border rounded d-flex text-nowrap" id="about-button" onclick="openAbout()" title="About">
-							<img class="icon" height="22" src="icons/help-about.svg">
-							<a class="nav-link active" aria-current="page">
+						<li class="border d-flex m-1 nav-item rounded text-nowrap" id="about-button" onclick="openAbout()" title="About">
+							<img class="icon m-1" height="22" src="icons/help-about.svg">
+							<a class="active mx-1 my-auto nav-link p-0" aria-current="page">
 								About
 							</a>
 						</li>
 					</ul>
 					<ul class="navbar-nav">
-						<li class="nav-item border rounded d-flex text-nowrap" id="login-button" onclick="openLogin()" title="Log in">
-							<img class="icon" height="22" src="icons/im-user.svg">
-							<a class="nav-link active" aria-current="page">
+						<li class="border d-flex m-1 nav-item rounded text-nowrap" id="login-button" onclick="openLogin()" title="Log in">
+							<img class="icon m-1" height="22" src="icons/im-user.svg">
+							<a class="active mx-1 my-auto nav-link p-0" aria-current="page">
 								Log in
 							</a>
 						</li>
@@ -48,33 +48,33 @@
 				</div>
 			</div>
 		</nav>
-		<div class="content d-flex" id="content" onclick="openHome()">
-			<img class="content-body" id="content-body" src="icons/placeholder.png">
+		<div class="content d-flex h-100 m-auto" id="content" onclick="openHome()">
+			<img class="border content-body m-1 rounded w-100" id="content-body" src="icons/placeholder.png">
 		</div>
-		<div class="popup shadow" id="about">
-			<div class="border container d-flex flex-column rounded">
-				<h2 class="popup-label">
+		<div class="position-fixed shadow start-50 top-50" id="about">
+			<div class="bg-body border container d-flex flex-column p-1 rounded">
+				<h2 class="m-1">
 					The Great Avocado War of '24
 				</h2>
-				<ul class="nav nav-tabs rounded-top" id="myTab" role="tablist">
+				<ul class="border-bottom-0 flex-nowrap me-auto ms-1 mt-1 nav nav-tabs position-relative rounded-top" id="myTab" role="tablist">
 					<li class="nav-item" role="presentation">
-						<button class="nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about-tab-pane" type="button" role="tab" aria-controls="about-tab-pane" aria-selected="true">
+						<button class="active border-bottom-0 m-0 nav-link position-relative px-1 py-0 rounded-0 text-dark" id="about-tab" data-bs-toggle="tab" data-bs-target="#about-tab-pane" type="button" role="tab" aria-controls="about-tab-pane" aria-selected="true">
 							About
 						</button>
 					</li>
 					<li class="nav-item" role="presentation">
-						<button class="nav-link" id="components-tab" data-bs-toggle="tab" data-bs-target="#components-tab-pane" type="button" role="tab" aria-controls="components-tab-pane" aria-selected="false">
+						<button class="border-bottom-0 m-0 nav-link position-relative px-1 py-0 rounded-0 text-dark" id="components-tab" data-bs-toggle="tab" data-bs-target="#components-tab-pane" type="button" role="tab" aria-controls="components-tab-pane" aria-selected="false">
 							Components
 						</button>
 					</li>
 					<li class="nav-item" role="presentation">
-						<button class="nav-link" id="authors-tab" data-bs-toggle="tab" data-bs-target="#authors-tab-pane" type="button" role="tab" aria-controls="authors-tab-pane" aria-selected="false">
+						<button class="border-bottom-0 m-0 nav-link position-relative px-1 py-0 rounded-0 text-dark" id="authors-tab" data-bs-toggle="tab" data-bs-target="#authors-tab-pane" type="button" role="tab" aria-controls="authors-tab-pane" aria-selected="false">
 							Authors
 						</button>
 					</li>
 				</ul>
 				<div class="tab-content" id="myTabContent">
-					<div class="tab-pane fade show active" id="about-tab-pane" role="tabpanel" aria-labelledby="about-tab" tabindex="0">
+					<div class="active border mb-1 mx-1 p-1 position-relative show tab-pane" id="about-tab-pane" role="tabpanel" aria-labelledby="about-tab" tabindex="0">
 						<div class="d-flex">
 							<img class="inline-img" src="icons/openart-image_yBIl3nIg_1717776713014_raw.jpg">
 						</div>
@@ -93,7 +93,7 @@
 						<br>
 						This website exists to serve as an accurate retelling of the Great Avocado War of '24. As for who won the war? You will have to play to find out.
 					</div>
-					<div class="tab-pane fade" id="components-tab-pane" role="tabpanel" aria-labelledby="components-tab" tabindex="0">
+					<div class="border mb-1 mx-1 p-1 position-relative tab-pane" id="components-tab-pane" role="tabpanel" aria-labelledby="components-tab" tabindex="0">
 						<b>
 							 Bootstrap
 						</b>
@@ -102,9 +102,9 @@
 							Version 5.3.3
 						</i>
 						<br>
-						<button type="button" class="borderless-button" title="Visit component's homepage&#013;https://getbootstrap.com">
+						<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit component's homepage&#013;https://getbootstrap.com">
 							<a href="https://getbootstrap.com" target="_blank">
-								<img class="icon" height="22" src="icons/globe.svg">
+								<img class="icon m-1" height="22" src="icons/globe.svg">
 							</a>
 						</button>
 						<b>
@@ -115,9 +115,9 @@
 							Version 5.0.6
 						</i>
 						<br>
-						<button type="button" class="borderless-button" title="Visit component's homepage&#013;https://www.djangoproject.com">
+						<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit component's homepage&#013;https://www.djangoproject.com">
 							<a href="https://www.djangoproject.com" target="_blank">
-								<img class="icon" height="22" src="icons/globe.svg">
+								<img class="icon m-1" height="22" src="icons/globe.svg">
 							</a>
 						</button>
 						<b>
@@ -128,9 +128,9 @@
 							Version 16.3
 						</i>
 						<br>
-						<button type="button" class="borderless-button" title="Visit component's homepage&#013;https://www.postgresql.org">
+						<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit component's homepage&#013;https://www.postgresql.org">
 							<a href="https://www.postgresql.org" target="_blank">
-								<img class="icon" height="22" src="icons/globe.svg">
+								<img class="icon m-1" height="22" src="icons/globe.svg">
 							</a>
 						</button>
 						<b>
@@ -141,13 +141,13 @@
 							Version r165
 						</i>
 						<br>
-						<button type="button" class="borderless-button" title="Visit component's homepage&#013;https://threejs.org">
+						<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit component's homepage&#013;https://threejs.org">
 							<a href="https://threejs.org" target="_blank">
-								<img class="icon" height="22" src="icons/globe.svg">
+								<img class="icon m-1" height="22" src="icons/globe.svg">
 							</a>
 						</button>
 					</div>
-					<div class="tab-pane fade" id="authors-tab-pane" role="tabpanel" aria-labelledby="authors-tab" tabindex="0">
+					<div class="border mb-1 mx-1 p-1 position-relative tab-pane" id="authors-tab-pane" role="tabpanel" aria-labelledby="authors-tab" tabindex="0">
 						<b>
 							Bruno Pierre Bouchard
 						</b>
@@ -156,9 +156,9 @@
 							Database
 						</i>
 						<br>
-						<button type="button" class="borderless-button" title="Visit contributor's homepage&#013;https://github.com/Nyonyx">
+						<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit contributor's homepage&#013;https://github.com/Nyonyx">
 							<a href="https://github.com/Nyonyx" target="_blank">
-								<img class="icon" height="22" src="icons/globe.svg">
+								<img class="icon m-1" height="22" src="icons/globe.svg">
 							</a>
 						</button>
 						<b>
@@ -169,9 +169,9 @@
 							Game
 						</i>
 						<br>
-						<button type="button" class="borderless-button" title="Visit contributor's homepage&#013;https://github.com/ShroomySquid">
+						<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit contributor's homepage&#013;https://github.com/ShroomySquid">
 							<a href="https://github.com/ShroomySquid" target="_blank">
-								<img class="icon" height="22" src="icons/globe.svg">
+								<img class="icon m-1" height="22" src="icons/globe.svg">
 							</a>
 						</button>
 						<b>
@@ -182,9 +182,9 @@
 							3D Rendering
 						</i>
 						<br>
-						<button type="button" class="borderless-button" title="Visit contributor's homepage&#013;https://github.com/joeroeg">
+						<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit contributor's homepage&#013;https://github.com/joeroeg">
 							<a href="https://github.com/joeroeg" target="_blank">
-								<img class="icon" height="22" src="icons/globe.svg">
+								<img class="icon m-1" height="22" src="icons/globe.svg">
 							</a>
 						</button>
 						<b>
@@ -195,9 +195,9 @@
 							Interface
 						</i>
 						<br>
-						<button type="button" class="borderless-button" title="Visit contributor's homepage&#013;https://github.com/lcouturi">
+						<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit contributor's homepage&#013;https://github.com/lcouturi">
 							<a href="https://github.com/lcouturi" target="_blank">
-								<img class="icon" height="22" src="icons/globe.svg">
+								<img class="icon m-1" height="22" src="icons/globe.svg">
 							</a>
 						</button>
 						<b>
@@ -208,107 +208,97 @@
 							Backend
 						</i>
 						<br>
-						<button type="button" class="borderless-button" title="Visit contributor's homepage&#013;https://github.com/pierreolivierpaquet">
+						<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit contributor's homepage&#013;https://github.com/pierreolivierpaquet">
 							<a href="https://github.com/pierreolivierpaquet" target="_blank">
-								<img class="icon" height="22" src="icons/globe.svg">
+								<img class="icon m-1" height="22" src="icons/globe.svg">
 							</a>
 						</button>
 					</div>
 				</div>
 				<div class="d-flex">
-					<div class="spacer">
-					</div>
-					<button type="button" class="button" onclick="openHome()">
-						<img class="icon" height="22" src="icons/window-close.svg">
-						<div class="label">
+					<button type="button" class="border button d-flex m-1 ms-auto rounded shadow-sm" onclick="openHome()">
+						<img class="icon m-1" height="22" src="icons/window-close.svg">
+						<div class="my-auto">
 							Close
 						</div>
 					</button>
 				</div>
 			</div>
 		</div>
-		<div class="popup shadow" id="login">
-			<div class="border container d-flex flex-column rounded">
-				<h2 class="popup-label">
+		<div class="position-fixed shadow start-50 top-50" id="login">
+			<div class="bg-body border container d-flex flex-column p-1 rounded">
+				<h2 class="m-1">
 					Log in
 				</h2>
-				<div class="frame">
-					<div class="d-flex">
-						<div class="d-flex flex-column">
-							<div class="label">
-								Username:
-							</div>
-							<div class="label">
-								Password:
-							</div>
+				<div class="border d-flex frame m-1 rounded">
+					<div class="d-flex flex-column">
+						<div class="label my-auto text-end">
+							Username:
 						</div>
-						<div class="d-flex flex-column">
-							<input type="text">
-							<input type="password">
+						<div class="label my-auto text-end">
+							Password:
 						</div>
+					</div>
+					<div class="d-flex flex-column">
+						<input class="border m-1 p-1 rounded w-100" type="text">
+						<input class="border m-1 p-1 rounded w-100" type="password">
 					</div>
 				</div>
 				<div class="d-flex">
-					<button type="button" class="button" onclick="openSignup()">
-						<img class="icon" height="22" src="icons/list-add-user.svg">
-						<div class="label">
+					<button type="button" class="border button d-flex m-1 rounded shadow-sm text-nowrap" onclick="openSignup()">
+						<img class="icon m-1" height="22" src="icons/list-add-user.svg">
+						<div class="label my-auto">
 							Sign up
 						</div>
 					</button>
-					<div class="spacer">
-					</div>
-					<button type="button" class="button" onclick="openHome()">
-						<img class="icon" height="22" src="icons/dialog-cancel.svg">
-						<div class="label">
+					<button type="button" class="border button d-flex m-1 ms-auto rounded shadow-sm" onclick="openHome()">
+						<img class="icon m-1" height="22" src="icons/dialog-cancel.svg">
+						<div class="label my-auto">
 							Cancel
 						</div>
 					</button>
-					<button type="button" class="button inactive">
-						<img class="icon" height="22" src="icons/dialog-ok-apply.svg">
-						<div class="label">
+					<button type="button" class="border button d-flex inactive m-1 rounded shadow-sm">
+						<img class="icon m-1" height="22" src="icons/dialog-ok-apply.svg">
+						<div class="label my-auto">
 							OK
 						</div>
 					</button>
 				</div>
 			</div>
 		</div>
-		<div class="popup shadow" id="signup">
-			<div class="border container d-flex flex-column rounded">
-				<h2 class="popup-label">
+		<div class="position-fixed shadow start-50 top-50" id="signup">
+			<div class="bg-body border container d-flex flex-column p-1 rounded">
+				<h2 class="m-1">
 					Sign up
 				</h2>
-				<div class="frame">
-					<div class="d-flex">
-						<div class="d-flex flex-column">
-							<div class="label">
-								Username:
-							</div>
-							<div class="label">
-								Password:
-							</div>
-							<div class="label">
-								Confirm password:
-							</div>
+				<div class="border d-flex frame m-1 rounded">
+					<div class="d-flex flex-column">
+						<div class="label my-auto text-end">
+							Username:
 						</div>
-						<div class="d-flex flex-column">
-							<input type="text">
-							<input type="password">
-							<input type="password">
+						<div class="label my-auto text-end">
+							Password:
 						</div>
+						<div class="label my-auto text-end">
+							Confirm password:
+						</div>
+					</div>
+					<div class="d-flex flex-column">
+						<input class="border m-1 p-1 rounded w-100" type="text">
+						<input class="border m-1 p-1 rounded w-100" type="password">
+						<input class="border m-1 p-1 rounded w-100" type="password">
 					</div>
 				</div>
 				<div class="d-flex">
-					<div class="spacer">
-					</div>
-					<button type="button" class="button" onclick="openLogin()">
-						<img class="icon" height="22" src="icons/dialog-cancel.svg">
-						<div class="label">
+					<button type="button" class="border button d-flex m-1 ms-auto rounded shadow-sm" onclick="openLogin()">
+						<img class="icon m-1" height="22" src="icons/dialog-cancel.svg">
+						<div class="my-auto">
 							Cancel
 						</div>
 					</button>
-					<button type="button" class="button inactive">
-						<img class="icon" height="22" src="icons/dialog-ok-apply.svg">
-						<div class="label">
+					<button type="button" class="border button d-flex inactive m-1 rounded shadow-sm">
+						<img class="icon m-1" height="22" src="icons/dialog-ok-apply.svg">
+						<div class="my-auto">
 							OK
 						</div>
 					</button>
