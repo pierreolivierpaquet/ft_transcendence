@@ -46,11 +46,6 @@
 	filter: invert(82%) sepia(0%) saturate(780%) hue-rotate(238deg) brightness(116%) contrast(79%);
 }
 
-.button:disabled .label
-{
-	cursor: default;
-}
-
 .button:focus
 {
 	--bs-border-color: #65b3d2;
@@ -105,11 +100,6 @@
 {
 	margin: auto;
 	max-height: 25rem;
-}
-
-.label
-{
-	cursor: default;
 }
 
 .nav-item
