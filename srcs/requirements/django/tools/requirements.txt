@@ -1,2 +1,7 @@
 django
+#
+# HTTP, HTTP2, and WebSocket protocol server for ASGI and ASGI-HTTP, developed as part of the Django Channels project.
 daphne
+#
+# PostgreSQL adapter for Python, allowing Django to interact with a PostgreSQL database.
+psycopg2-binary
