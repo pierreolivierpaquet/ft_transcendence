@@ -1,6 +1,7 @@
 .borderless-button
 {
 	--bs-border-color: transparent;
+	--bs-border-radius: 3px;
 	background-color: inherit;
 	transition: border-color 0.25s ease-out;
 }
@@ -13,7 +14,7 @@
 
 .borderless-button:hover
 {
-	border-color: #00b0ef !important;
+	--bs-border-color: #00b0ef !important;
 }
 
 .button
@@ -57,19 +58,14 @@
 	--bs-border-color: #00b0ef;
 }
 
-.container
-{
-	--bs-border-color: #bcbbbd;
-}
-
-.container input[type=text], .container input[type=password]
+input[type=password], input[type=text]
 {
 	background-color: #fcfcfc;
 	height: 30px;
 	transition: border-color 0.25s ease-out;
 }
 
-.container input[type=text]:hover, .container input[type=password]:hover, .container input[type=text]:focus, .container input[type=password]:focus
+input[type=password]:focus, input[type=password]:hover, input[type=text]:focus, input[type=text]:hover
 {
 	--bs-border-color: #00b0ef;
 	outline: none;
@@ -102,6 +98,13 @@
 	max-height: 25rem;
 }
 
+.modal-content
+{
+	--bs-border-color: #bcbbbd;
+	--bs-modal-footer-border-width: 0;
+	--bs-modal-header-border-width: 0;
+}
+
 .nav-item
 {
 	--bs-border-color: transparent;
@@ -124,6 +127,7 @@
 {
 	background-color: #c7c8c9;
 	bottom: -1px;
+	width: min-content
 }
 
 .nav-tabs .nav-item .nav-link
@@ -133,10 +137,22 @@
 	transition: background-color 0.25s ease-out, border-color 0.25s ease-out;
 }
 
-.nav-tabs .nav-item .nav-link:hover
+.nav-tabs .nav-item .nav-link:focus, .nav-tabs .nav-item .nav-link:hover
 {
 	background-color: #c5e4f2;
 	border-color: #c5e4f2;
+}
+
+.nav-tabs .nav-item .nav-link.first:focus, .nav-tabs .nav-item .nav-link.first:hover
+{
+	border-top-left-radius: 3px !important;
+	border-top-right-radius: 0;
+}
+
+.nav-tabs .nav-item .nav-link.last:focus, .nav-tabs .nav-item .nav-link.last:hover
+{
+	border-top-left-radius: 0;
+	border-top-right-radius: 3px !important;
 }
 
 .nav-tabs .nav-item .nav-link.active

@@ -30,7 +30,7 @@
 								Leaderboard
 							</a>
 						</li>
-						<li class="border d-flex m-1 nav-item rounded text-nowrap" id="about-button" onclick="openAbout()" title="About">
+						<li class="border d-flex m-1 nav-item rounded text-nowrap" data-bs-toggle="modal" data-bs-target="#about" onclick="openAbout()" title="About">
 							<img class="icon m-1" height="22" src="icons/help-about.svg">
 							<a class="active mx-1 my-auto nav-link p-0" aria-current="page">
 								About
@@ -38,7 +38,7 @@
 						</li>
 					</ul>
 					<ul class="navbar-nav">
-						<li class="border d-flex m-1 nav-item rounded text-nowrap" id="login-button" onclick="openLogin()" title="Log in">
+						<li class="border d-flex m-1 nav-item rounded text-nowrap" data-bs-toggle="modal" data-bs-target="#login" title="Log in">
 							<img class="icon m-1" height="22" src="icons/im-user.svg">
 							<a class="active mx-1 my-auto nav-link p-0" aria-current="page">
 								Log in
@@ -48,260 +48,278 @@
 				</div>
 			</div>
 		</nav>
-		<div class="content d-flex h-100 m-auto" id="content" onclick="openHome()">
+		<div class="content d-flex h-100 m-auto" id="content">
 			<img class="border content-body m-1 rounded w-100" id="content-body" src="icons/placeholder.png">
 		</div>
-		<div class="position-fixed shadow start-50 top-50" id="about">
-			<div class="bg-body border container d-flex flex-column p-1 rounded">
-				<h2 class="m-1 pe-none">
-					The Great Avocado War of '24
-				</h2>
-				<ul class="border-bottom-0 flex-nowrap me-auto ms-1 mt-1 nav nav-tabs position-relative rounded-top" id="myTab" role="tablist">
-					<li class="nav-item" role="presentation">
-						<button class="active border-bottom-0 m-0 nav-link position-relative px-1 py-0 rounded-0 text-dark" id="about-tab" data-bs-toggle="tab" data-bs-target="#about-tab-pane" type="button" role="tab" aria-controls="about-tab-pane" aria-selected="true">
-							About
-						</button>
-					</li>
-					<li class="nav-item" role="presentation">
-						<button class="border-bottom-0 m-0 nav-link position-relative px-1 py-0 rounded-0 text-dark" id="components-tab" data-bs-toggle="tab" data-bs-target="#components-tab-pane" type="button" role="tab" aria-controls="components-tab-pane" aria-selected="false">
-							Components
-						</button>
-					</li>
-					<li class="nav-item" role="presentation">
-						<button class="border-bottom-0 m-0 nav-link position-relative px-1 py-0 rounded-0 text-dark" id="authors-tab" data-bs-toggle="tab" data-bs-target="#authors-tab-pane" type="button" role="tab" aria-controls="authors-tab-pane" aria-selected="false">
-							Authors
-						</button>
-					</li>
-				</ul>
-				<div class="tab-content" id="myTabContent">
-					<div class="active border mb-1 mx-1 p-1 position-relative rounded show tab-pane" id="about-tab-pane" role="tabpanel" aria-labelledby="about-tab" tabindex="0">
-						<div class="d-flex">
-							<img class="inline-img" src="icons/openart-image_yBIl3nIg_1717776713014_raw.jpg">
+		<div class="modal fade" id="about" tabindex="-1" aria-labelledby="about" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="bg-body border modal-content p-1 rounded">
+					<div class="modal-header p-1">
+						<h2 class="m-1 pe-none">
+							The Great Avocado War of '24
+						</h2>
+					</div>
+					<div class="m-1 modal-body p-0">
+						<ul class="border-bottom-0 flex-nowrap ms-1 mt-1 nav nav-tabs position-relative rounded-top" id="myTab" role="tablist">
+							<li class="first nav-item" role="presentation">
+								<button class="active border-bottom-0 first m-0 nav-link position-relative px-1 py-0 text-dark" id="about-tab" data-bs-toggle="tab" data-bs-target="#about-tab-pane" type="button" role="tab" aria-controls="about-tab-pane" aria-selected="true">
+									About
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="border-bottom-0 m-0 nav-link position-relative px-1 py-0 rounded-0 text-dark" id="components-tab" data-bs-toggle="tab" data-bs-target="#components-tab-pane" type="button" role="tab" aria-controls="components-tab-pane" aria-selected="false">
+									Components
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="border-bottom-0 m-0 last nav-link position-relative px-1 py-0 text-dark" id="authors-tab" data-bs-toggle="tab" data-bs-target="#authors-tab-pane" type="button" role="tab" aria-controls="authors-tab-pane" aria-selected="false">
+									Authors
+								</button>
+							</li>
+						</ul>
+						<div class="tab-content" id="myTabContent">
+							<div class="active border mb-1 mx-1 p-1 position-relative rounded show tab-pane" id="about-tab-pane" role="tabpanel" aria-labelledby="about-tab" tabindex="0">
+								<div class="d-flex">
+									<img class="inline-img" src="icons/openart-image_yBIl3nIg_1717776713014_raw.jpg">
+								</div>
+								<br>
+								On February 30th 2024, something happened that would forever change the course of history. Tired of being treated as little more than food, the avocados waged war against the animal kingdom as a whole.
+								<br>
+								<br>
+								At first, the war went well for the avocados and they made short work of the weak human forces. With the humans out of the picture, the avocados thought they had won the war.
+								<br>
+								<br>
+								They were wrong.
+								<br>
+								<br>
+								They were not prepared for the onslaught from the pangolins. The pangolins were ruthless. The avocados found themselves evenly matched.
+								<br>
+								<br>
+								This website exists to serve as an accurate retelling of the Great Avocado War of '24. As for who won the war? You will have to play to find out.
+							</div>
+							<div class="border mb-1 mx-1 p-1 position-relative rounded tab-pane" id="components-tab-pane" role="tabpanel" aria-labelledby="components-tab" tabindex="0">
+								<b>
+									Bootstrap
+								</b>
+								<br>
+								<i>
+									Version 5.3.3
+								</i>
+								<br>
+								<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit component's homepage&#013;https://getbootstrap.com">
+									<a href="https://getbootstrap.com" target="_blank">
+										<img class="icon m-1" height="22" src="icons/globe.svg">
+									</a>
+								</button>
+								<b>
+									Django
+								</b>
+								<br>
+								<i>
+									Version 5.0.6
+								</i>
+								<br>
+								<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit component's homepage&#013;https://www.djangoproject.com">
+									<a href="https://www.djangoproject.com" target="_blank">
+										<img class="icon m-1" height="22" src="icons/globe.svg">
+									</a>
+								</button>
+								<b>
+									PostgreSQL
+								</b>
+								<br>
+								<i>
+									Version 16.3
+								</i>
+								<br>
+								<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit component's homepage&#013;https://www.postgresql.org">
+									<a href="https://www.postgresql.org" target="_blank">
+										<img class="icon m-1" height="22" src="icons/globe.svg">
+									</a>
+								</button>
+								<b>
+									Three.js
+								</b>
+								<br>
+								<i>
+									Version r165
+								</i>
+								<br>
+								<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit component's homepage&#013;https://threejs.org">
+									<a href="https://threejs.org" target="_blank">
+										<img class="icon m-1" height="22" src="icons/globe.svg">
+									</a>
+								</button>
+							</div>
+							<div class="border mb-1 mx-1 p-1 position-relative rounded tab-pane" id="authors-tab-pane" role="tabpanel" aria-labelledby="authors-tab" tabindex="0">
+								<b>
+									Bruno Pierre Bouchard
+								</b>
+								<br>
+								<i>
+									Database
+								</i>
+								<br>
+								<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit contributor's homepage&#013;https://github.com/Nyonyx">
+									<a href="https://github.com/Nyonyx" target="_blank">
+										<img class="icon m-1" height="22" src="icons/globe.svg">
+									</a>
+								</button>
+								<b>
+									Félix Barrette
+								</b>
+								<br>
+								<i>
+									Game
+								</i>
+								<br>
+								<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit contributor's homepage&#013;https://github.com/ShroomySquid">
+									<a href="https://github.com/ShroomySquid" target="_blank">
+										<img class="icon m-1" height="22" src="icons/globe.svg">
+									</a>
+								</button>
+								<b>
+									George Zhukov
+								</b>
+								<br>
+								<i>
+									3D Rendering
+								</i>
+								<br>
+								<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit contributor's homepage&#013;https://github.com/joeroeg">
+									<a href="https://github.com/joeroeg" target="_blank">
+										<img class="icon m-1" height="22" src="icons/globe.svg">
+									</a>
+								</button>
+								<b>
+									Léopold Couturier-Otis
+								</b>
+								<br>
+								<i>
+									Interface
+								</i>
+								<br>
+								<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit contributor's homepage&#013;https://github.com/lcouturi">
+									<a href="https://github.com/lcouturi" target="_blank">
+										<img class="icon m-1" height="22" src="icons/globe.svg">
+									</a>
+								</button>
+								<b>
+									Pierre Olivier Paquet
+								</b>
+								<br>
+								<i>
+									Backend
+								</i>
+								<br>
+								<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit contributor's homepage&#013;https://github.com/pierreolivierpaquet">
+									<a href="https://github.com/pierreolivierpaquet" target="_blank">
+										<img class="icon m-1" height="22" src="icons/globe.svg">
+									</a>
+								</button>
+							</div>
 						</div>
-						<br>
-						On February 30th 2024, something happened that would forever change the course of history. Tired of being treated as little more than food, the avocados waged war against the animal kingdom as a whole.
-						<br>
-						<br>
-						At first, the war went well for the avocados and they made short work of the weak human forces. With the humans out of the picture, the avocados thought they had won the war.
-						<br>
-						<br>
-						They were wrong.
-						<br>
-						<br>
-						They were not prepared for the onslaught from the pangolins. The pangolins were ruthless. The avocados found themselves evenly matched.
-						<br>
-						<br>
-						This website exists to serve as an accurate retelling of the Great Avocado War of '24. As for who won the war? You will have to play to find out.
 					</div>
-					<div class="border mb-1 mx-1 p-1 position-relative rounded tab-pane" id="components-tab-pane" role="tabpanel" aria-labelledby="components-tab" tabindex="0">
-						<b>
-							 Bootstrap
-						</b>
-						<br>
-						<i>
-							Version 5.3.3
-						</i>
-						<br>
-						<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit component's homepage&#013;https://getbootstrap.com">
-							<a href="https://getbootstrap.com" target="_blank">
-								<img class="icon m-1" height="22" src="icons/globe.svg">
-							</a>
-						</button>
-						<b>
-							 Django
-						</b>
-						<br>
-						<i>
-							Version 5.0.6
-						</i>
-						<br>
-						<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit component's homepage&#013;https://www.djangoproject.com">
-							<a href="https://www.djangoproject.com" target="_blank">
-								<img class="icon m-1" height="22" src="icons/globe.svg">
-							</a>
-						</button>
-						<b>
-							 PostgreSQL
-						</b>
-						<br>
-						<i>
-							Version 16.3
-						</i>
-						<br>
-						<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit component's homepage&#013;https://www.postgresql.org">
-							<a href="https://www.postgresql.org" target="_blank">
-								<img class="icon m-1" height="22" src="icons/globe.svg">
-							</a>
-						</button>
-						<b>
-							 Three.js
-						</b>
-						<br>
-						<i>
-							Version r165
-						</i>
-						<br>
-						<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit component's homepage&#013;https://threejs.org">
-							<a href="https://threejs.org" target="_blank">
-								<img class="icon m-1" height="22" src="icons/globe.svg">
-							</a>
+					<div class="modal-footer p-1">
+						<button type="button" class="border button d-flex m-1 ms-auto rounded shadow-sm" data-bs-dismiss="modal">
+							<img class="icon m-1" height="22" src="icons/window-close.svg">
+							<div class="my-auto">
+								Close
+							</div>
 						</button>
 					</div>
-					<div class="border mb-1 mx-1 p-1 position-relative rounded tab-pane" id="authors-tab-pane" role="tabpanel" aria-labelledby="authors-tab" tabindex="0">
-						<b>
-							Bruno Pierre Bouchard
-						</b>
-						<br>
-						<i>
-							Database
-						</i>
-						<br>
-						<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit contributor's homepage&#013;https://github.com/Nyonyx">
-							<a href="https://github.com/Nyonyx" target="_blank">
-								<img class="icon m-1" height="22" src="icons/globe.svg">
-							</a>
-						</button>
-						<b>
-							Félix Barrette
-						</b>
-						<br>
-						<i>
-							Game
-						</i>
-						<br>
-						<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit contributor's homepage&#013;https://github.com/ShroomySquid">
-							<a href="https://github.com/ShroomySquid" target="_blank">
-								<img class="icon m-1" height="22" src="icons/globe.svg">
-							</a>
-						</button>
-						<b>
-							 George Zhukov
-						</b>
-						<br>
-						<i>
-							3D Rendering
-						</i>
-						<br>
-						<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit contributor's homepage&#013;https://github.com/joeroeg">
-							<a href="https://github.com/joeroeg" target="_blank">
-								<img class="icon m-1" height="22" src="icons/globe.svg">
-							</a>
-						</button>
-						<b>
-							Léopold Couturier-Otis
-						</b>
-						<br>
-						<i>
-							Interface
-						</i>
-						<br>
-						<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit contributor's homepage&#013;https://github.com/lcouturi">
-							<a href="https://github.com/lcouturi" target="_blank">
-								<img class="icon m-1" height="22" src="icons/globe.svg">
-							</a>
-						</button>
-						<b>
-							 Pierre Olivier Paquet
-						</b>
-						<br>
-						<i>
-							Backend
-						</i>
-						<br>
-						<button type="button" class="border borderless-button d-flex m-1 p-0 rounded" title="Visit contributor's homepage&#013;https://github.com/pierreolivierpaquet">
-							<a href="https://github.com/pierreolivierpaquet" target="_blank">
-								<img class="icon m-1" height="22" src="icons/globe.svg">
-							</a>
-						</button>
-					</div>
-				</div>
-				<div class="d-flex">
-					<button type="button" class="border button d-flex m-1 ms-auto rounded shadow-sm" onclick="openHome()">
-						<img class="icon m-1" height="22" src="icons/window-close.svg">
-						<div class="my-auto">
-							Close
-						</div>
-					</button>
 				</div>
 			</div>
 		</div>
-		<div class="position-fixed shadow start-50 top-50" id="login">
-			<div class="bg-body border container d-flex flex-column p-1 rounded">
-				<h2 class="m-1 pe-none">
-					Log in
-				</h2>
-				<div class="border d-flex frame m-1 rounded">
-					<div class="d-flex flex-column">
-						<div class="my-auto pe-none text-end">
-							Username:
-						</div>
-						<div class="my-auto pe-none text-end">
-							Password:
+		<div class="modal fade" id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="bg-body border modal-content p-1 rounded">
+					<div class="modal-header p-1">
+						<h2 class="m-1 pe-none">
+							Log in
+						</h2>
+					</div>
+					<div class="m-1 modal-body p-0">
+						<div class="border d-flex frame m-1 rounded">
+							<div class="d-flex flex-column">
+								<div class="my-auto pe-none text-end">
+									Username:
+								</div>
+								<div class="my-auto pe-none text-end">
+									Password:
+								</div>
+							</div>
+							<div class="d-flex flex-column w-100">
+								<input class="border m-1 p-1 rounded w-100" type="text">
+								<input class="border m-1 p-1 rounded w-100" type="password">
+							</div>
 						</div>
 					</div>
-					<div class="d-flex flex-column">
-						<input class="border m-1 p-1 rounded w-100" type="text">
-						<input class="border m-1 p-1 rounded w-100" type="password">
+					<div class="modal-footer p-1">
+						<button type="button" class="border button d-flex m-1 rounded shadow-sm text-nowrap" data-bs-target="#signup" data-bs-toggle="modal">
+							<img class="icon m-1" height="22" src="icons/list-add-user.svg">
+							<div class="my-auto pe-none">
+								Sign up
+							</div>
+						</button>
+						<button type="button" class="border button d-flex m-1 ms-auto rounded shadow-sm" data-bs-dismiss="modal">
+							<img class="icon m-1" height="22" src="icons/dialog-cancel.svg">
+							<div class="my-auto pe-none">
+								Cancel
+							</div>
+						</button>
+						<button type="button" class="border button d-flex m-1 pe-none rounded shadow-sm" disabled>
+							<img class="icon m-1" height="22" src="icons/dialog-ok-apply.svg">
+							<div class="my-auto">
+								OK
+							</div>
+						</button>
 					</div>
 				</div>
-				<div class="d-flex">
-					<button type="button" class="border button d-flex m-1 rounded shadow-sm text-nowrap" onclick="openSignup()">
-						<img class="icon m-1" height="22" src="icons/list-add-user.svg">
-						<div class="my-auto pe-none">
+			</div>
+		</div>
+		<div class="modal fade" id="signup" tabindex="-1" aria-labelledby="signup" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="bg-body border modal-content p-1 rounded">
+					<div class="modal-header p-1">
+						<h2 class="m-1 pe-none">
 							Sign up
-						</div>
-					</button>
-					<button type="button" class="border button d-flex m-1 ms-auto rounded shadow-sm" onclick="openHome()">
-						<img class="icon m-1" height="22" src="icons/dialog-cancel.svg">
-						<div class="my-auto pe-none">
-							Cancel
-						</div>
-					</button>
-					<button type="button" class="border button d-flex m-1 pe-none rounded shadow-sm" disabled>
-						<img class="icon m-1" height="22" src="icons/dialog-ok-apply.svg">
-						<div class="my-auto">
-							OK
-						</div>
-					</button>
-				</div>
-			</div>
-		</div>
-		<div class="position-fixed shadow start-50 top-50" id="signup">
-			<div class="bg-body border container d-flex flex-column p-1 rounded">
-				<h2 class="m-1 pe-none">
-					Sign up
-				</h2>
-				<div class="border d-flex frame m-1 rounded">
-					<div class="d-flex flex-column">
-						<div class="my-auto pe-none text-end">
-							Username:
-						</div>
-						<div class="my-auto pe-none text-end">
-							Password:
-						</div>
-						<div class="my-auto pe-none text-end">
-							Confirm password:
+						</h2>
+					</div>
+					<div class="m-1 modal-body p-0">
+						<div class="border d-flex frame m-1 rounded">
+							<div class="d-flex flex-column">
+								<div class="my-auto pe-none text-end">
+									Username:
+								</div>
+								<div class="my-auto pe-none text-end">
+									Password:
+								</div>
+								<div class="my-auto pe-none text-end text-nowrap">
+									Confirm password:
+								</div>
+							</div>
+							<div class="d-flex flex-column w-100">
+								<input class="border m-1 p-1 rounded w-100" type="text">
+								<input class="border m-1 p-1 rounded w-100" type="password">
+								<input class="border m-1 p-1 rounded w-100" type="password">
+							</div>
 						</div>
 					</div>
-					<div class="d-flex flex-column">
-						<input class="border m-1 p-1 rounded w-100" type="text">
-						<input class="border m-1 p-1 rounded w-100" type="password">
-						<input class="border m-1 p-1 rounded w-100" type="password">
+					<div class="modal-footer p-1">
+						<button type="button" class="border button d-flex m-1 ms-auto rounded shadow-sm" data-bs-target="#login" data-bs-toggle="modal">
+							<img class="icon m-1" height="22" src="icons/dialog-cancel.svg">
+							<div class="my-auto">
+								Cancel
+							</div>
+						</button>
+						<button type="button" class="border button d-flex m-1 pe-none rounded shadow-sm" disabled>
+							<img class="icon m-1" height="22" src="icons/dialog-ok-apply.svg">
+							<div class="my-auto">
+								OK
+							</div>
+						</button>
 					</div>
-				</div>
-				<div class="d-flex">
-					<button type="button" class="border button d-flex m-1 ms-auto rounded shadow-sm" onclick="openLogin()">
-						<img class="icon m-1" height="22" src="icons/dialog-cancel.svg">
-						<div class="my-auto">
-							Cancel
-						</div>
-					</button>
-					<button type="button" class="border button d-flex m-1 pe-none rounded shadow-sm" disabled>
-						<img class="icon m-1" height="22" src="icons/dialog-ok-apply.svg">
-						<div class="my-auto">
-							OK
-						</div>
-					</button>
 				</div>
 			</div>
 		</div>
