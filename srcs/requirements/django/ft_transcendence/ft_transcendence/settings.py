@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -33,6 +34,7 @@ ALLOWED_HOSTS = []
 # ppaquet: added avocado.
 INSTALLED_APPS = [
     'avocado',
+    'newyear',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
