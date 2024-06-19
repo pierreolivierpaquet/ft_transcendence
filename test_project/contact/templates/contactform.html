@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title> Django and Fetch API Form Submissions- No Page Refresh</title>
+  </head>
+  <body style="text-align: center; display: block"><p id="output-message"></p>
+<form action="{% url 'contact' %}"  id="formdata" method="POST" role="form" class="contactForm">
+    {% csrf_token %}<input type="text" name="name" id="name" class="form-control"  placeholder="Your Name"  required> <br><br><br>
+              
+<input type="email" class="form-control" name="email" id="email"  placeholder="Your Email"  required>
+    <br><br><br>
+        
+ <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"  required> <br><br>
+           
+<input type="submit" id="conctactsub" value="contact us">
+           
+</form>

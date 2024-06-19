@@ -1,0 +1,15 @@
+{% include 'navbar.html'%}
+
+{% if hellos %}
+<h1>Hello World and :</h1>
+<div>
+	{% for hello in hellos %}
+	<div>
+		<h5>{{hello.id}} -- {{hello.name}}</h5>
+		<p>{{hello.description}}</p>
+	</div>
+	{% endfor %}
+</div>
+{% else %}
+<h1>Hello World and no one</h1>
+{% endif %}

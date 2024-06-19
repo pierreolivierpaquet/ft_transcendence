@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href='{% static "../static/index.css" %}' />
+		<link rel="shorcut icon" href ="#">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- description is what appears on google -->
+		<meta name="description" content="schnoute">
+		<title>Practice stuff</title>
+	</head>
+	<body>
+		<!-- <input id="csrf_token" type="hiden" value="{{ csrf_token }}"></input> -->
+		<header>
+			<img src='{% static "../static/fire_avocado.png" %}' alt="">
+			<div id="avocado-banner">
+				<h1 class="title">Avocados!!</h1>
+				<p>list of the best avocados</p>
+				<form id="search-form"> 
+					<input type="text" placeholder="Search avocado..." />
+				</form>
+			</div>
+			<div id="avocado-list">
+				<h2 class="title">Avocados to eat</h2>
+				<ul>
+				</ul>
+			</div>
+			<form id="add-form" method="post"> {% csrf_token %}
+				<input type="text" placeholder="Add avocado..." />
+				<button type="button" id="add-btn">Add</button>
+			</form>
+		</header>
+		<script src='{% static "../static/app.js" %}'></script>
+	</body>
+</html>
