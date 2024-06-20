@@ -8,8 +8,9 @@
 
 .borderless-button:active
 {
-	transition: background-color 0.25s ease-out;
+	--bs-border-color: #00b0ef !important;
 	background-color: #9ed0e8 !important;
+	transition: background-color 0.25s ease-out;
 }
 
 .borderless-button:hover
