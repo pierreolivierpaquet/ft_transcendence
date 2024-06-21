@@ -46,14 +46,14 @@
 			<img class="border content-body m-1 rounded w-100" id="content-body" src="icons/placeholder.png">
 		</div>
 		<div aria-hidden="true" aria-labelledby="about" class="modal fade" id="about" tabindex="-1">
-			<div class="modal-dialog modal-dialog-centered modal-lg">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
 				<div class="bg-body border modal-content p-1 rounded">
 					<div class="modal-header p-1">
 						<h2 class="m-1 pe-none">
 							The Great Avocado War of '24
 						</h2>
 					</div>
-					<div class="m-1 modal-body p-0">
+					<div class="d-flex flex-column m-1 modal-body overflow-hidden p-0">
 						<ul class="border-bottom-0 flex-nowrap ms-1 mt-1 nav nav-tabs position-relative rounded-top" id="myTab" role="tablist">
 							<li class="nav-item" role="presentation">
 								<button aria-controls="about-tab-pane" aria-selected="true" class="active border-bottom-0 first m-0 nav-link position-relative px-1 py-0 text-dark" data-bs-target="#about-tab-pane" data-bs-toggle="tab" id="about-tab" role="tab" type="button">
@@ -71,8 +71,8 @@
 								</button>
 							</li>
 						</ul>
-						<div class="tab-content" id="myTabContent">
-							<div aria-labelledby="about-tab" class="active border mb-1 mx-1 p-1 position-relative rounded show tab-pane" id="about-tab-pane" role="tabpanel" tabindex="0">
+						<div class="d-flex overflow-hidden tab-content" id="myTabContent">
+							<div aria-labelledby="about-tab" class="active border mb-1 mx-1 overflow-y-auto p-1 position-relative rounded show tab-pane" id="about-tab-pane" role="tabpanel" tabindex="0">
 								<div class="d-flex">
 									<img class="inline-img" src="icons/openart-image_yBIl3nIg_1717776713014_raw.jpg">
 								</div>
@@ -91,7 +91,7 @@
 								<br>
 								This website exists to serve as an accurate retelling of the Great Avocado War of '24. As for who won the war? You will have to play to find out.
 							</div>
-							<div aria-labelledby="components-tab" class="border mb-1 mx-1 p-1 position-relative rounded tab-pane" id="components-tab-pane" role="tabpanel" tabindex="0">
+							<div aria-labelledby="components-tab" class="border mb-1 mx-1 overflow-y-auto p-1 position-relative rounded tab-pane w-100" id="components-tab-pane" role="tabpanel" tabindex="0">
 								<b>
 									Bootstrap
 								</b>
@@ -145,7 +145,7 @@
 									</a>
 								</button>
 							</div>
-							<div aria-labelledby="authors-tab" class="border mb-1 mx-1 p-1 position-relative rounded tab-pane" id="authors-tab-pane" role="tabpanel" tabindex="0">
+							<div aria-labelledby="authors-tab" class="border mb-1 mx-1 overflow-y-auto p-1 position-relative rounded tab-pane w-100" id="authors-tab-pane" role="tabpanel" tabindex="0">
 								<b>
 									Bruno Pierre Bouchard
 								</b>
@@ -245,16 +245,16 @@
 									</div>
 								</div>
 								<div class="d-flex flex-column w-100">
-									<input aria-describedby="inputGroupPrepend2" class="border m-1 p-1 rounded w-100" required type="text">
-									<input aria-describedby="inputGroupPrepend2" class="border m-1 p-1 rounded w-100" required type="password">
+									<input class="border m-1 p-1 rounded w-100" required type="text">
+									<input class="border m-1 p-1 rounded w-100" required type="password">
 								</div>
 							</div>
 						</div>
 						<div class="modal-footer p-1">
-							<button class="border button d-flex m-1 rounded shadow-sm text-nowrap" data-bs-target="#signup" data-bs-toggle="modal" type="button">
+							<button class="border button d-flex m-1 rounded shadow-sm text-nowrap" data-bs-target="#register" data-bs-toggle="modal" type="button">
 								<img class="icon m-1" height="22" src="icons/list-add-user.svg">
 								<div class="my-auto pe-none">
-									Sign up
+									Register
 								</div>
 							</button>
 							<button class="border button d-flex m-1 ms-auto rounded shadow-sm" data-bs-dismiss="modal" type="button">
@@ -274,12 +274,12 @@
 				</div>
 			</div>
 		</div>
-		<div aria-hidden="true" aria-labelledby="login" class="modal fade" id="signup" tabindex="-1">
+		<div aria-hidden="true" aria-labelledby="login" class="modal fade" id="register" tabindex="-1">
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="bg-body border modal-content p-1 rounded">
 					<div class="modal-header p-1">
 						<h2 class="m-1 pe-none">
-							Sign up
+							Register
 						</h2>
 					</div>
 					<form>
@@ -297,9 +297,9 @@
 									</div>
 								</div>
 								<div class="d-flex flex-column w-100">
-									<input aria-describedby="inputGroupPrepend2" class="border m-1 p-1 rounded w-100" required type="text">
-									<input aria-describedby="inputGroupPrepend2" class="border m-1 p-1 rounded w-100" required type="password">
-									<input aria-describedby="inputGroupPrepend2" class="border m-1 p-1 rounded w-100" required type="password">
+									<input class="border m-1 p-1 rounded w-100" required type="text">
+									<input class="border m-1 p-1 rounded w-100" required type="password">
+									<input class="border m-1 p-1 rounded w-100" required type="password">
 								</div>
 							</div>
 						</div>
