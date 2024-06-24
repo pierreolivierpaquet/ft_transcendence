@@ -133,8 +133,10 @@ input[type=password]:focus, input[type=password]:hover, input[type=text]:focus, 
 
 .nav-tabs .nav-item .nav-link
 {
+	--bs-nav-link-font-size: 13px;
 	border-top-width: 3px;
 	cursor: default;
+	padding: 2px 0 6.25px;
 	transition: background-color 0.25s ease-out, border-color 0.25s ease-out;
 }
 
@@ -168,6 +170,13 @@ input[type=password]:focus, input[type=password]:hover, input[type=text]:focus, 
 .navbar
 {
 	--bs-border-color: #aeb2b4;
+}
+
+.navbar-nav .nav-item
+{
+	--bs-nav-link-font-size: 10px;
+	margin: 5.5px 1px;
+	padding: 0 7.5px 0 7px;
 }
 
 .tab-pane
